@@ -1899,3 +1899,190 @@ html {
 @media (max-width: 576px) {
   .locations-grid { grid-template-columns: 1fr; }
 }
+
+.wrapper {
+  height: 100vh;
+  background: #333;
+}
+
+#main-div {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 0;
+}
+#main-button .icon-close {
+  display: none;
+}
+#main-button.open .icon-mail {
+  display: none;
+}
+#main-button.open .icon-close {
+  display: block;
+}
+
+#main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  width: 60px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(---light-yellow);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#main-button:hover {
+  background-color: #fff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+}
+
+#main-button ~ .onlineregistration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  visibility: hidden;
+  font-weight: bold;
+  text-decoration: none;
+  height: 50px;
+  padding: 0 25px;
+  color: #fff;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: -1;
+  right: 10px !important;
+  bottom: 10px !important;
+  opacity: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+#main-button ~ .wrappericon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  z-index: -1;
+  height: 55px;
+  width: 55px;
+  opacity: 0;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+
+#main-button ~ .wrapper_icon_messenger {
+  width: fit-content;
+  height: fit-content;
+  box-shadow: unset;
+  border-radius: unset;
+}
+#main-button.open .icon-mail {
+  display: none;
+}
+.open {
+  animation-iteration-count: 1;
+}
+#main-button.open .icon-close {
+  display: block;
+}
+#main-button .icon-close {
+  display: none;
+}
+#main-button.open ~ .onlineregistration {
+  visibility: visible;
+  right: 80px !important;
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+  background: #fff;
+  color: black;
+  width: 200px;
+}
+#main-button.open ~ #wrapper_messenger {
+  bottom: 82px;
+  right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#main-button.open ~ .wrappericon {
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+}
+#main-button.open ~ #wrappertg {
+  bottom: 150px;
+  background: linear-gradient(0deg, #017ab1, #01abe6) !important;
+}
+
+#main-button.open ~ .wrappericon {
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+}
+#main-button.open ~ #wrapper_whatsapp {
+  bottom: 220px;
+  background: lab(70.5521% -66.5147 45.8073);
+}
+#main-button.open ~ #wrapper_imo {
+  bottom: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#main-button.open ~ .wrappericon {
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+}
+#main-button.open ~ #wrapper_messenger{
+  width: 55px;
+  height: 55px;
+}
+.wave {
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wrapper {
+  display: block;
+  position: absolute;
+  z-index: 200;
+}
+
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0 0 #a00d120b;
+  }
+
+  100% {
+    box-shadow: 0 0 0 15px #a00d1209;
+  }
+}
+
+.open {
+  animation-iteration-count: 1;
+}
+/* BURGER BUTTON */
+#open_menu {
+  display: none;
+  cursor: pointer;
+}
