@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="/assests/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assests/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assests/img/icon.webp"
+      type="image/x-icon"
+    />
+    <title>МаксАвто</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="main-div">
+        <div id="main-button" class="chat-pulse">
+          <svg
+            class="icon-mail"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="28"
+            height="28"
+            x="0"
+            y="0"
+            viewBox="0 0 512.012 512.012"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <path
+                d="M333.201 115.038c-28.905-59.021-89.37-98.042-157.193-98.042-97.047 0-176 78.505-176 175 0 26.224 5.63 51.359 16.742 74.794L.299 349.055c-2.094 10.472 7.144 19.728 17.618 17.656l83.279-16.465a172.546 172.546 0 0 0 34.732 12.151c-26.717-126.541 69.199-245.321 197.273-247.359z"
+                fill="#e61f22"
+                opacity="1"
+                data-original="#e61f22"
+                class=""
+              ></path>
+              <path
+                d="M495.266 394.79a174.485 174.485 0 0 0 7.511-18.514h-.549c37.448-109.917-41.305-225.441-157.567-231.066l-.005-.018c-100.036-4.61-183.148 75.486-183.148 174.804 0 96.414 78.361 174.857 174.743 174.997 26.143-.035 51.201-5.663 74.568-16.747 91.207 18.032 84.094 16.75 86.189 16.75 9.479 0 16.56-8.686 14.709-17.941z"
+                fill="#e61f22"
+                opacity="1"
+                data-original="#e61f22"
+                class=""
+              ></path>
+            </g>
+          </svg>
+
+          <svg
+            class="icon-close"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="20"
+            height="20"
+            x="0"
+            y="0"
+            viewBox="0 0 320.591 320.591"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class=""
+          >
+            <g>
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                fill="#333"
+                opacity="1"
+                data-original="#2e5085"
+                class=""
+              ></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                fill="#333"
+                opacity="1"
+                data-original="#2e5085"
+                class=""
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <button
+          type="button"
+          id="wrapperdown"
+          class="onlineregistration modalBtn"
+          data-btn="1"
+        >
+          Заказать звонок
+        </button>
+        <a
+          class="wrappericon"
+          href="https://wa.me/79189179163"
+          id="wrapper_whatsapp"
+          target="_blank"
+          title="whatsapp"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+            viewBox="0 0 682 682.667"
+          >
+            <g>
+              <path
+                fill-rule="evenodd"
+                d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0"
+                fill="white"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <a
+          class="wrappericon wrapper_icon_messenger"
+          href="#"
+          id="wrapper_messenger"
+          target="_blank"
+          title="mesenger"
+        >
+          <img
+            src="/assests/img/maxmessencer.png"
+            loading="lazy"
+            width="55"
+            height="55"
+            alt="mesenger"
+          />
+        </a>
+        <a
+          class="wrappericon"
+          href="ht"
+          id="wrappertg"
+          target="_blank"
+          title="Telegram"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="27"
+            height="27"
+            x="0"
+            y="0"
+            viewBox="0 0 24 24"
+          >
+            <g>
+              <path
+                d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
+                fill="#fff"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <div class="nav-trigger desktop" id="navTrigger">
+            <svg
+              viewBox="0 0 24 24"
+              width="22"
+              height="14"
+              stroke="#fff"
+              stroke-width="2"
+              fill="none"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </div>
+          <a href="/">
+            <img src="assests/img/maxlogo.webp" alt="МаксАвто" />
+          </a>
+        </div>
+
+        <div class="nav-trigger mobile" id="navTrigger2">
+          <svg
+            viewBox="0 0 24 24"
+            width="35"
+            height="35"
+            stroke="#000"
+            stroke-width="2"
+            fill="none"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </div>
+
+        <div class="phone">
+          <a href="mailto:kvtikhonova1211@yandex.ru">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="3" />
+              <polyline points="2,4 12,13 22,4" />
+            </svg>
+            kvtikhonova1211@yandex.ru
+          </a>
+        </div>
+
+        <div class="headernav">
+          <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li><a href="/about.html">О нас</a></li>
+              <li><a href="/services.html">Услуги</a></li>
+              <li><a href="/articles.html">Статьи</a></li>
+              <li><a href="/contacts.html">Контакты</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="icons">
+          <a href="tel:+79043430043" class="icons__phone">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 482.6 482.6"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </svg>
+            +7 904 343 00 43
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bredcrumb">
+        <div class="container">
+          <div class="speedbar">
+            <div class="over"><a href="/">Главная</a> » О нас</div>
+          </div>
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <div class="about-box">
+            <!-- TOP TEXT -->
+            <div class="about-head">
+              <span>О НАС</span>
+              <h2>
+                Создаём прозрачную <br />
+                <b class="stroke-text">экосистему</b> авторитейла
+              </h2>
+              <p>Опираемся на интересы клиентов, партнёров и инвесторов</p>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="about-grid">
+              <!-- LEFT BIG -->
+              <div class="about-main">
+                <h3>
+                  Основной вид деятельности — работа на рынке автомобилей с
+                  пробегом
+                </h3>
+
+                <div class="about-tags">
+                  <span>Продажа авто</span>
+                  <span>Покупка авто</span>
+                  <span>Доставка</span>
+                  <span>Трейд-ин</span>
+                  <span>Сервис</span>
+                  <span>Кредиты</span>
+                </div>
+              </div>
+
+              <!-- RIGHT STATS -->
+              <div class="about-stats">
+                <div class="about-card">
+                  <h4>350 000+</h4>
+                  <p>автомобилей продано</p>
+                </div>
+
+                <div class="about-card">
+                  <h4>1/4 авто</h4>
+                  <p>с доставкой в другой город</p>
+                </div>
+
+                <div class="about-card">
+                  <h4>258 пунктов</h4>
+                  <p>в диагностике автомобилей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-bottom">
+        <div class="container">
+          <div class="about-bottom-inner">
+            <h2 class="about-title">
+              <span class="about-line-green"> 20 лет формируем </span> <br />
+              цивилизованный рынок <br />
+              автомобилей с пробегом!
+            </h2>
+
+            <div class="about-cards">
+              <div class="about-card2">
+                <p>В топ-3 <br />среди дилеров</p>
+              </div>
+
+              <div class="about-card2">
+                <p>«Лучший клиентский <br />опыт B2C»</p>
+              </div>
+
+              <div class="about-card2">
+                <p>Строим <br />честный бизнес</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="_bestStandardsDealer_50ytu_136">
+        <div class="container">
+          <div class="content">
+            <div class="_bestStandardsDealerHeader_50ytu_141">
+              <h2 class="_bestStandardsDealerTitle_50ytu_144">
+                Официальный представитель брендов
+              </h2>
+              <p class="_bestStandardsDealerText_50ytu_151">
+                Помимо автомобилей с&nbsp;пробегом FRESH продает новые
+                автомобили
+              </p>
+            </div>
+            <div
+              loop=""
+              class="_logoMarquee_50ytu_157"
+              aria-label="Логотипы наших партнёров"
+              role="marquee"
+            >
+              <ul class="_logoMarqueeList_50ytu_164">
+                <!--[-->
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt="Логотип Хавал"
+                    src="data:image/webp;base64,UklGRiAEAABXRUJQVlA4WAoAAAAQAAAAswAAdAAAQUxQSOACAAABoAVJtmnbGte2bdu2bdu2bdu2bTzb5rVte5/VH3t174N1vh5OREyARfg/wv//xNx8ivZW1p+i/QOL9dUpsSLrfEqsIQ0/Ja4Uep4StwdW+hT9PcQ+BR2vfAA6OaDUPfpC/DUKiX0V/FQ0If0LcF8BNjL5TYj1AqoG+sZbNj9O9aeAnsRaCRgo7IC4ymg+34SOytno4UJJB6uqKXcTkkhfCo+SkbKO8CgZ+xAv0n8vYFh4EOlbwFfwkIAFxIoEMaxwi/wTxEFGGwHYXsoRnqQIB9oDwKdZXwtvcxFbJ/jyu3SBeCoaiXEBgFNmq4C1Ye7RJfFVMMW94YdmswScYCmeMHzsF/+2UtvoKPj/kPa5EFQ4rAVvANPgein5LQF1iA0X0NjMZkM8ZjT1Mxd0Hivgi0gel+mVG8Z2Vs5EJzHOCRdjWrY3wtucbCPcbyW/JKClx+0DfZ72BwFDiNUXMNoOQ5xvtLhDMKuZciW2p1WCOLCMIzxOTux9YWV1iHcTkkjfgN+K/KmACV4W5XfhZjzbLmA1y/OOPE71l9LDaFuI/aygT3iRzsN6Qexolu6F4CtEbAkZ0g/ir1FInOvCn1HNVgnYERy+vgHXD7Yn18TXwZDonvB9ZDMbL+AzlviBy5mUD5UKRqdCrGZmyR8LTtlgCMaTwTbexA+CYSG4U9rMLNYVAc2J9XWpswziHqMZXwqHzH+wgB8je1Sut8JWc22hXI5Fov4J4ES+d8LLjGwP+OusLtFOC+jsUSfBn6d1i/S5gHHEqgFvc30IcYrRihBnmXtt5XZ8T6oLcZzRwkHC87TEDmJhI4jX45Aovwq34hM7LmC2F0U/I1yKxWyNgG0s640U55W2RntA7Gw851vhTVYPGgqxmYkpnghOaWLpR0L8JhJJeFf4IbJgCwQcCm2VW9I8SsWWNJ9L7Za8scklW4rFmdVpKWYxmrGlmM3UBC3VGH4pWwZ/hUAi/B/hfw8GVlA4IBoBAACQDgCdASq0AHUAPpFGnUolpCMhqF9YALASCWlu3V9FYHYAJkTdQCTssqq/vt3yayyqr++3fJrLJbt1CIpQ0VoELYtFZL9ZMdFQFRFtPHLW4rCzbB/v39IoAper/CXhpDUsByzTMuFAgaerJOlcTUgFRa47LKqv77d8msrQAAD++M6VAx4AAAkPXen/9ILDHjf9rWdC/TjBGVh2Mg4deFyZnKlEN7TN5uw3j1WLIWHlqAITgZxd4LZhvTOoTvNjZfDXO/eJSWbQ8vMwBwGz+l1lvrf/UpoEBHyfVaVzqJLgftQRuKXXv2hu4MfBewvk5/n8DIQXdovrl7V/PfSAbZJIHGRtkrDEcXI5uCfe4De5AALOdMZAAAAAAAA="
+                    aria-label="Логотип Хавал"
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt="Логотип Джетур"
+                    src="data:image/webp;base64,UklGRtADAABXRUJQVlA4WAoAAAAQAAAAswAAdAAAQUxQSLMCAAABoJVtb9jI+iEYgiAYghhMGNQMGgYjBhMGLoMeBoIQCIJgCP+FE9fpdM/lbkRMAP75/x8QN3f/ASDVp2ZAfbIA+H76TAOQ3N2/xjZ3/wFw96lbejcn6QCMcxUonCyAcLIAQpJlzEk6gAfnfv1BdFb+DeU3NX09AaKn1hU9xcldh9dOr2s6/qseJAPXlk4weqAY1jcJjP8+Pc1y/LF0sJTy6ybKh2rBl/8PhTxe0k/Q4vRjAWs7inD3uuFaJUmdF7j2s0D2Axe84RX2J6hDgHWM27tUG46hZq/LG1Qbfow9bTgmQIJ9lctyN/Fspl4j3cwMpG7iS4B1jNtVqc3ZAKy/Ic1KANqc7TVIsP++CItNFQDJ5spQNjNLQyg29QYA2WaWBGAxs3UAabU+X/S3pkG22Kuc7Pucnd9dcq7zhIc6IJ9tdw/6ySPmSOM3kHY+cYm7ez5Tlo8mQGqUdN9qlW1LdQFwr0j3WrfbATL5nXZGQrZa7YZcFyBbTvetVj0I9NsPgG3NTq9VthVI2wrdal2RrW6mHwNOfbBFaBCtJQgdT7ZotAMUsjEE0hhBmtIAY3mQEV8HbTMziQAQvjS2CA0HMl3JiKcEI0h9u8VeTENBARCE0fDgDWyqK+MIKxkCKCsgjLOdgkPhoR7QsbAA6JReuAJY+FR9cANWG1+vMn/xhcBRai0zIDzcT7CzACgsAE42lkachYgk7DxSrl10/xkVwMrDDXj6eL1qZlBFFjINwNh4Q2pxV83pzA8yKyDcM/eUnMoh9E8qFjoyvaPgzu2ocFdVwQcMHhrOElJjADCSEfdXEGSQK3aSDEwo7G9IQe5Y2eejFGSLkA+wlD4Dy9ItJQFSEgAspZSSz7RIJ8XMFMBiVhJKOUllOUA2uysAWUoB1OwuyEUAQLSUUtIH+Of/v/4HAFZQOCD2AAAAkA4AnQEqtAB1AD6RQJpIpaQioS2/mACwEglpbuFzQO8hH4FY5PQAElsKzhztc5t5zbzm3nL9f/mTfuJfAqygWtLVaAftd1SNlQ5sLUprlKak4Cl/RKHdq9krum2rEivRoe1kJxJY3tMmsFyawYJqKzhztc5t5zbzm3nNogAA/v8Z49BouAafoR/ruO0FF2DPDsB2lLHzwvC7bI70Ivu90diZwCzPbxo4Tqz5jIxx4UfmtyAfg1ousiFkEgpyvWMHxVLUbtnj5WjglE3P+7/cbP+IkN8nSCQBAGMAnGMPXIXH5EJ+pvQKfKJZTroGaIAAAAAAAAAA"
+                    aria-label="Логотип Джетур"
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt="Логотип Джак Моторс"
+                    src="data:image/webp;base64,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"
+                    aria-label="Логотип Джак Моторс"
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt="Логотип Тенет"
+                    src="data:image/svg+xml,%3csvg%20width='180'%20height='117'%20viewBox='0%200%20180%20117'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M175.539%2053.6435C175.539%2051.6309%20173.91%2050%20171.899%2050H162.217H158.303H144.98V53.6435H158.303V66.9881H162.217V53.6435H175.539Z'%20fill='%23696C70'/%3e%3cpath%20d='M17.3735%2050H7.69104C5.68025%2050%204.05078%2051.6309%204.05078%2053.6435H17.3735V66.9881H21.287V53.6435H34.6097V50H21.287H17.3735Z'%20fill='%23696C70'/%3e%3cpath%20d='M98.9496%2061.9792L78.8005%2050.5509C78.1656%2050.1889%2077.4482%2050%2076.717%2050C75.172%2050%2073.918%2051.2552%2073.918%2052.8015V66.9881H77.8314V56.1381C77.8314%2055.1427%2078.9047%2054.517%2079.7695%2055.0069L99.9187%2066.4372C100.554%2066.7972%20101.273%2066.9881%20102.002%2066.9881C103.547%2066.9881%20104.801%2065.7329%20104.801%2064.1866V50H100.888V60.848C100.888%2061.8434%2099.8145%2062.4691%2098.9496%2061.9792Z'%20fill='%23696C70'/%3e%3cpath%20d='M48.8436%2060.5283H68.4149V56.8848H48.8436C47.8392%2056.8848%2047.0234%2057.7012%2047.0234%2058.7065C47.0234%2059.7118%2047.8392%2060.5283%2048.8436%2060.5283Z'%20fill='%23696C70'/%3e%3cpath%20d='M46.3468%2050C41.6569%2050%2037.8555%2053.8049%2037.8555%2058.499C37.8555%2063.193%2041.6569%2066.9999%2046.3468%2066.9999H68.4144V63.3563H46.62C43.9409%2063.3563%2041.7689%2061.1824%2041.7689%2058.5009C41.7689%2055.8194%2043.9409%2053.6455%2046.62%2053.6455H68.4144V50H46.3468Z'%20fill='%23696C70'/%3e%3cpath%20d='M140.014%2056.8848H110.051V60.5283H140.014V56.8848Z'%20fill='%23696C70'/%3e%3cpath%20d='M110.051%2067H136.374C138.385%2067%20140.014%2065.369%20140.014%2063.3564H110.051V67Z'%20fill='%23696C70'/%3e%3cpath%20d='M110.051%2050V53.6435H140.014C140.014%2051.6309%20138.385%2050%20136.374%2050H110.051Z'%20fill='%23696C70'/%3e%3c/svg%3e"
+                    aria-label="Логотип Тенет"
+                    decoding="async"
+                  />
+                </li>
+                <!--]-->
+              </ul>
+              <ul class="_logoMarqueeList_50ytu_164" aria-hidden="true">
+                <!--[-->
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt=""
+                    src="data:image/webp;base64,UklGRiAEAABXRUJQVlA4WAoAAAAQAAAAswAAdAAAQUxQSOACAAABoAVJtmnbGte2bdu2bdu2bdu2bTzb5rVte5/VH3t174N1vh5OREyARfg/wv//xNx8ivZW1p+i/QOL9dUpsSLrfEqsIQ0/Ja4Uep4StwdW+hT9PcQ+BR2vfAA6OaDUPfpC/DUKiX0V/FQ0If0LcF8BNjL5TYj1AqoG+sZbNj9O9aeAnsRaCRgo7IC4ymg+34SOytno4UJJB6uqKXcTkkhfCo+SkbKO8CgZ+xAv0n8vYFh4EOlbwFfwkIAFxIoEMaxwi/wTxEFGGwHYXsoRnqQIB9oDwKdZXwtvcxFbJ/jyu3SBeCoaiXEBgFNmq4C1Ye7RJfFVMMW94YdmswScYCmeMHzsF/+2UtvoKPj/kPa5EFQ4rAVvANPgein5LQF1iA0X0NjMZkM8ZjT1Mxd0Hivgi0gel+mVG8Z2Vs5EJzHOCRdjWrY3wtucbCPcbyW/JKClx+0DfZ72BwFDiNUXMNoOQ5xvtLhDMKuZciW2p1WCOLCMIzxOTux9YWV1iHcTkkjfgN+K/KmACV4W5XfhZjzbLmA1y/OOPE71l9LDaFuI/aygT3iRzsN6Qexolu6F4CtEbAkZ0g/ir1FInOvCn1HNVgnYERy+vgHXD7Yn18TXwZDonvB9ZDMbL+AzlviBy5mUD5UKRqdCrGZmyR8LTtlgCMaTwTbexA+CYSG4U9rMLNYVAc2J9XWpswziHqMZXwqHzH+wgB8je1Sut8JWc22hXI5Fov4J4ES+d8LLjGwP+OusLtFOC+jsUSfBn6d1i/S5gHHEqgFvc30IcYrRihBnmXtt5XZ8T6oLcZzRwkHC87TEDmJhI4jX45Aovwq34hM7LmC2F0U/I1yKxWyNgG0s640U55W2RntA7Gw851vhTVYPGgqxmYkpnghOaWLpR0L8JhJJeFf4IbJgCwQcCm2VW9I8SsWWNJ9L7Za8scklW4rFmdVpKWYxmrGlmM3UBC3VGH4pWwZ/hUAi/B/hfw8GVlA4IBoBAACQDgCdASq0AHUAPpFGnUolpCMhqF9YALASCWlu3V9FYHYAJkTdQCTssqq/vt3yayyqr++3fJrLJbt1CIpQ0VoELYtFZL9ZMdFQFRFtPHLW4rCzbB/v39IoAper/CXhpDUsByzTMuFAgaerJOlcTUgFRa47LKqv77d8msrQAAD++M6VAx4AAAkPXen/9ILDHjf9rWdC/TjBGVh2Mg4deFyZnKlEN7TN5uw3j1WLIWHlqAITgZxd4LZhvTOoTvNjZfDXO/eJSWbQ8vMwBwGz+l1lvrf/UpoEBHyfVaVzqJLgftQRuKXXv2hu4MfBewvk5/n8DIQXdovrl7V/PfSAbZJIHGRtkrDEcXI5uCfe4De5AALOdMZAAAAAAAA="
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt=""
+                    src="data:image/webp;base64,UklGRtADAABXRUJQVlA4WAoAAAAQAAAAswAAdAAAQUxQSLMCAAABoJVtb9jI+iEYgiAYghhMGNQMGgYjBhMGLoMeBoIQCIJgCP+FE9fpdM/lbkRMAP75/x8QN3f/ASDVp2ZAfbIA+H76TAOQ3N2/xjZ3/wFw96lbejcn6QCMcxUonCyAcLIAQpJlzEk6gAfnfv1BdFb+DeU3NX09AaKn1hU9xcldh9dOr2s6/qseJAPXlk4weqAY1jcJjP8+Pc1y/LF0sJTy6ybKh2rBl/8PhTxe0k/Q4vRjAWs7inD3uuFaJUmdF7j2s0D2Axe84RX2J6hDgHWM27tUG46hZq/LG1Qbfow9bTgmQIJ9lctyN/Fspl4j3cwMpG7iS4B1jNtVqc3ZAKy/Ic1KANqc7TVIsP++CItNFQDJ5spQNjNLQyg29QYA2WaWBGAxs3UAabU+X/S3pkG22Kuc7Pucnd9dcq7zhIc6IJ9tdw/6ySPmSOM3kHY+cYm7ez5Tlo8mQGqUdN9qlW1LdQFwr0j3WrfbATL5nXZGQrZa7YZcFyBbTvetVj0I9NsPgG3NTq9VthVI2wrdal2RrW6mHwNOfbBFaBCtJQgdT7ZotAMUsjEE0hhBmtIAY3mQEV8HbTMziQAQvjS2CA0HMl3JiKcEI0h9u8VeTENBARCE0fDgDWyqK+MIKxkCKCsgjLOdgkPhoR7QsbAA6JReuAJY+FR9cANWG1+vMn/xhcBRai0zIDzcT7CzACgsAE42lkachYgk7DxSrl10/xkVwMrDDXj6eL1qZlBFFjINwNh4Q2pxV83pzA8yKyDcM/eUnMoh9E8qFjoyvaPgzu2ocFdVwQcMHhrOElJjADCSEfdXEGSQK3aSDEwo7G9IQe5Y2eejFGSLkA+wlD4Dy9ItJQFSEgAspZSSz7RIJ8XMFMBiVhJKOUllOUA2uysAWUoB1OwuyEUAQLSUUtIH+Of/v/4HAFZQOCD2AAAAkA4AnQEqtAB1AD6RQJpIpaQioS2/mACwEglpbuFzQO8hH4FY5PQAElsKzhztc5t5zbzm3nL9f/mTfuJfAqygWtLVaAftd1SNlQ5sLUprlKak4Cl/RKHdq9krum2rEivRoe1kJxJY3tMmsFyawYJqKzhztc5t5zbzm3nNogAA/v8Z49BouAafoR/ruO0FF2DPDsB2lLHzwvC7bI70Ivu90diZwCzPbxo4Tqz5jIxx4UfmtyAfg1ousiFkEgpyvWMHxVLUbtnj5WjglE3P+7/cbP+IkN8nSCQBAGMAnGMPXIXH5EJ+pvQKfKJZTroGaIAAAAAAAAAA"
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt=""
+                    src="data:image/webp;base64,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"
+                    decoding="async"
+                  />
+                </li>
+                <li class="_logoMarqueeListItem_50ytu_183">
+                  <img
+                    class="_logoMarqueeListSubitem_50ytu_198"
+                    alt=""
+                    src="data:image/svg+xml,%3csvg%20width='180'%20height='117'%20viewBox='0%200%20180%20117'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M175.539%2053.6435C175.539%2051.6309%20173.91%2050%20171.899%2050H162.217H158.303H144.98V53.6435H158.303V66.9881H162.217V53.6435H175.539Z'%20fill='%23696C70'/%3e%3cpath%20d='M17.3735%2050H7.69104C5.68025%2050%204.05078%2051.6309%204.05078%2053.6435H17.3735V66.9881H21.287V53.6435H34.6097V50H21.287H17.3735Z'%20fill='%23696C70'/%3e%3cpath%20d='M98.9496%2061.9792L78.8005%2050.5509C78.1656%2050.1889%2077.4482%2050%2076.717%2050C75.172%2050%2073.918%2051.2552%2073.918%2052.8015V66.9881H77.8314V56.1381C77.8314%2055.1427%2078.9047%2054.517%2079.7695%2055.0069L99.9187%2066.4372C100.554%2066.7972%20101.273%2066.9881%20102.002%2066.9881C103.547%2066.9881%20104.801%2065.7329%20104.801%2064.1866V50H100.888V60.848C100.888%2061.8434%2099.8145%2062.4691%2098.9496%2061.9792Z'%20fill='%23696C70'/%3e%3cpath%20d='M48.8436%2060.5283H68.4149V56.8848H48.8436C47.8392%2056.8848%2047.0234%2057.7012%2047.0234%2058.7065C47.0234%2059.7118%2047.8392%2060.5283%2048.8436%2060.5283Z'%20fill='%23696C70'/%3e%3cpath%20d='M46.3468%2050C41.6569%2050%2037.8555%2053.8049%2037.8555%2058.499C37.8555%2063.193%2041.6569%2066.9999%2046.3468%2066.9999H68.4144V63.3563H46.62C43.9409%2063.3563%2041.7689%2061.1824%2041.7689%2058.5009C41.7689%2055.8194%2043.9409%2053.6455%2046.62%2053.6455H68.4144V50H46.3468Z'%20fill='%23696C70'/%3e%3cpath%20d='M140.014%2056.8848H110.051V60.5283H140.014V56.8848Z'%20fill='%23696C70'/%3e%3cpath%20d='M110.051%2067H136.374C138.385%2067%20140.014%2065.369%20140.014%2063.3564H110.051V67Z'%20fill='%23696C70'/%3e%3cpath%20d='M110.051%2050V53.6435H140.014C140.014%2051.6309%20138.385%2050%20136.374%2050H110.051Z'%20fill='%23696C70'/%3e%3c/svg%3e"
+                    decoding="async"
+                  />
+                </li>
+                <!--]-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container first">
+        <div class="footer-top">
+          <a href="#top" class="logo-footer">
+            <img src="/assests/img/maxlogo.webp" alt="МаксАвто" />
+          </a>
+          <div class="footer-container">
+            <div class="footer-col">
+              <h4>Навигация</h4>
+              <a href="#top">Главная</a>
+              <a href="#catalog">Каталог</a>
+              <a href="#about">О нас</a>
+              <a href="#services">Услуги</a>
+              <a href="#articles">Статьи</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+              <h4>Услуги</h4>
+              <a href="#services">Кредитование</a>
+              <a href="#services">Лизинг для физ. лиц</a>
+              <a href="#services">Страхование</a>
+              <a href="#services">Трейд-ин</a>
+              <a href="#services">Продажа и выкуп авто</a>
+            </div>
+
+            <div class="footer-col footer-col--articles">
+              <h4>Статьи</h4>
+              <a href="#articles"
+                >Популярные автомобильные бренды, с которыми мы работаем</a
+              >
+              <a href="#articles"
+                >Как правильно выбрать автомобиль с пробегом</a
+              >
+              <a href="#articles"
+                >Оформление покупки и доставка авто из Европы</a
+              >
+            </div>
+
+            <div class="footer-col">
+              <h4>Контакты</h4>
+              <a href="tel:+79043430043">+7 904 343 00 43</a>
+              <a href="mailto:kvtikhonova1211@yandex.ru"
+                >kvtikhonova1211@yandex.ru</a
+              >
+
+              <p class="mt">
+                Главный редактор<br />
+                Камышникова Анастасия<br />
+                a.kamyshnikova@maxavto.ru
+              </p>
+
+              <p class="mt">
+                Представитель рекламной службы –<br />
+                Шершетников Сергей<br />
+                advt@maxavto.ru
+              </p>
+
+              <h4>Мы в соцсетях</h4>
+              <div class="icons">
+                <a href="">
+                  <img src="/assests/img/telegram.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="/assests/img/whatsapp.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="/assests/img/maxmessencer.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="politics">
+          <a href="">Политика обработки персональных данных</a>
+          <a href="">Правила оказания услуг для юридических лиц</a>
+        </div>
+        <div class="brands-footer">
+          <a href="/">МаксАвто</a>
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/1/Sollers.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/3/Logo-7.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/4/Haval.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/5/Exeed.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/7/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/8/Logo-6.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/9/Jetour.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/10/Jac_Motors.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-s.freshauto.ru/system/brand_logo/bw_logo/12/Logo-5.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <div>
+            <p>Copyright © <span id="year"></span></p>
+          </div>
+          <a href="https://jeywastudio.com/">
+            Разработка сайта и <br />
+            техническая поддержка — JEYWA STUDIO
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assests/main.js"></script>
+  </body>
+</html>

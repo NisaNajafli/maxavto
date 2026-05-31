@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
     <link rel="stylesheet" href="/assests/css/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/assests/css/style.css" />
+    <link rel="shortcut icon" href="/assests/img/icon.webp" type="image/x-icon">
     <title>МаксАвто</title>
   </head>
   <body>
      <div class="wrapper">
       <div id="main-div">
-        <div id="main-button" class="wave">
+        <div id="main-button" class="chat-pulse">
           <svg
             class="icon-mail"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,16 +39,16 @@
             <g>
               <path
                 d="M333.201 115.038c-28.905-59.021-89.37-98.042-157.193-98.042-97.047 0-176 78.505-176 175 0 26.224 5.63 51.359 16.742 74.794L.299 349.055c-2.094 10.472 7.144 19.728 17.618 17.656l83.279-16.465a172.546 172.546 0 0 0 34.732 12.151c-26.717-126.541 69.199-245.321 197.273-247.359z"
-                fill="#A00D13"
+                fill="#e61f22"
                 opacity="1"
-                data-original="#A00D13"
+                data-original="#e61f22"
                 class=""
               ></path>
               <path
                 d="M495.266 394.79a174.485 174.485 0 0 0 7.511-18.514h-.549c37.448-109.917-41.305-225.441-157.567-231.066l-.005-.018c-100.036-4.61-183.148 75.486-183.148 174.804 0 96.414 78.361 174.857 174.743 174.997 26.143-.035 51.201-5.663 74.568-16.747 91.207 18.032 84.094 16.75 86.189 16.75 9.479 0 16.56-8.686 14.709-17.941z"
-                fill="#A00D13"
+                fill="#e61f22"
                 opacity="1"
-                data-original="#A00D13"
+                data-original="#e61f22"
                 class=""
               ></path>
             </g>
@@ -209,13 +216,13 @@
         <div class="headernav">
           <nav>
             <ul>
-              <li><a href="#catalog">Купить</a></li>
-              <li><a href="#sell">Продать</a></li>
-              <li><a href="#credit">Кредит</a></li>
-              <li><a href="#service">Сервис</a></li>
-              <li class="none"><a href="#tradein">Трейд-ин</a></li>
-              <li><a href="#about">О нас</a></li>
-              <li><a href="#contacts">Контакты</a></li>
+              <li><a href="#">Главная</a></li>
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li><a href="/about.html">О нас</a></li>
+              <li><a href="/services.html">Услуги</a></li>
+              <li><a href="/articles.html">Статьи</a></li>
+              <li><a href="/contacts.html">Контакты</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
             </ul>
           </nav>
         </div>
@@ -233,7 +240,7 @@
               <g>
                 <path
                   d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"
-                  fill="#9ca3af"
+                  fill="currentColor"
                 ></path>
               </g>
             </svg>
@@ -244,45 +251,58 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="top">
         <div class="container">
           <div class="swiper heroSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide hero__slide hero__slide--1">
                 <div class="hero__content">
-                  <h1 class="hero__title">ПРОВЕРЕННЫЕ АВТО и доверие.</h1>
+                  <h1 class="hero__title">МАКС АВТО — ваш партнёр.</h1>
                   <p class="hero__desc">
-                    Прозрачные сделки. Юридическая чистота.<br />Ваш автомобиль
-                    мечты — за 1 день.
+                    Автомобили с пробегом в комфортных и прозрачных условиях.
+                    Поддержка 24/7: ОСАГО, КАСКО, ТО, ремонт и консультации —
+                    для вас и ваших друзей.
                   </p>
-                  <a href="#catalog" class="hero__btn">Смотреть каталог</a>
                 </div>
               </div>
 
               <div class="swiper-slide hero__slide hero__slide--2">
                 <div class="hero__content">
-                  <h1 class="hero__title">ВЫКУП АВТО за 1 час.</h1>
+                  <h1 class="hero__title">ЮРИДИЧЕСКАЯ чистота.</h1>
                   <p class="hero__desc">
-                    Оценим ваш автомобиль онлайн.<br />Деньги — в день
-                    обращения.
+                    Гарантируем юридическую чистоту сделки.<br />
+                    Переоформление приобретённого автомобиля в ГИБДД — всего за
+                    1 час.
                   </p>
-                  <a href="#catalog" class="hero__btn">Смотреть каталог</a>
                 </div>
               </div>
 
               <div class="swiper-slide hero__slide hero__slide--3">
                 <div class="hero__content">
-                  <h1 class="hero__title">КРЕДИТ БЕЗ переплат.</h1>
+                  <h1 class="hero__title">КРЕДИТ ЛИЗИНГ страхование.</h1>
                   <p class="hero__desc">
-                    Кредитование, лизинг, страхование.<br />Одобрение за 15
-                    минут.
+                    Кредитование и лизинг для физических лиц, страхование,
+                    трейд-ин, продажа и выкуп автомобилей — всё в одном месте.
                   </p>
-                  <a href="#catalog" class="hero__btn">Смотреть каталог</a>
                 </div>
               </div>
+
+              <!-- Временно скрытый 4 слайд hero
+              <div class="swiper-slide hero__slide hero__slide--4">
+                <div class="hero__content">
+                  <h1 class="hero__title">НАДЁЖНАЯ продажа авто.</h1>
+                  <p class="hero__desc">
+                    Проверенные автомобили, честные условия и сопровождение на
+                    каждом этапе.<br />
+                    Покупайте с уверенностью — мы отвечаем за качество сделки.
+                  </p>
+                </div>
+              </div>
+              -->
             </div>
 
             <div class="hero__pagination">
+              <div class="hero__bullet"><span></span></div>
               <div class="hero__bullet"><span></span></div>
               <div class="hero__bullet"><span></span></div>
               <div class="hero__bullet"><span></span></div>
@@ -293,53 +313,76 @@
           </div>
         </div>
       </section>
+      <!-- Временно скрыто: блок hero-contact
       <div class="hero-contact">
-        <div class="contact-left">
-          <div class="contact-card">
-            <div class="icon">
-              <img src="/assests/img/telegram.svg" alt="" />
-            </div>
-            <a>
-              <span>Тelegram</span>
-              <!-- <h4>+7 904 343 00 43</h4> -->
+        <div class="hero-contact__quick">
+          <h3 class="hero-contact__quick-title">МаксАвто — ваш надёжный партнёр</h3>
+          <p class="hero-contact__text">
+            Автомобили с пробегом, прозрачные сделки и поддержка 24/7: кредит,
+            лизинг, страхование, ТО и юридическое сопровождение.
+          </p>
+          <button
+            type="button"
+            class="hero-contact__cta onlineregistration modalBtn"
+            data-btn="1"
+          >
+            Оставить заявку
+          </button>
+          <p class="hero-contact__subtitle">Быстрые способы связи</p>
+          <div class="contact-cards">
+            <a
+              class="contact-card"
+              href="https://t.me/+79043430043"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="icon">
+                <img src="/assests/img/telegram.svg" alt="Telegram" />
+              </div>
+              <span>Telegram</span>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://wa.me/79189179163"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="icon">
+                <img src="/assests/img/whatsapp.svg" alt="WhatsApp" />
+              </div>
+              <span>WhatsApp</span>
+            </a>
+
+            <a
+              class="contact-card"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="icon">
+                <img src="/assests/img/maxmessencer.png" alt="MaxMessenger" />
+              </div>
+              <span>MaxMessencer</span>
             </a>
           </div>
-
-          <div class="contact-card">
-            <div class="icon">
-              <img src="/assests/img/whatsapp.svg" alt="" />
-            </div>
-            <div>
-              <span>WhatsApp</span>
-              <!-- <h4>+7 904 343 00 43</h4> -->
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="icon">
-              <img src="/assests/img/maxmessencer.png" alt="" />
-            </div>
-            <div>
-              <span>MaxMessencer</span>
-              <!-- <h4>+7 904 343 00 43</h4> -->
-            </div>
-          </div>
         </div>
 
-        <div class="contact-right">
-          <div class="icon"></div>
-          <div>
-            <span>География доставки</span>
-            <h4>Европа — Россия</h4>
-            <a href="/contact.html">СВЯЗАТЬСЯ С НАМИ</a>
-          </div>
+        <div class="hero-contact__media">
+          <img
+            src="/assests/img/contact_image.png"
+            alt="Автомобили в салоне МаксАвто"
+            loading="lazy"
+          />
         </div>
       </div>
+      -->
       <!-- SEARCH SECTION -->
-      <section class="car-search">
+      <section class="car-search" id="catalog">
         <div class="container">
-             <div class="section-head">
-            <span class="section-label"> <i></i> ПРИМЕРЫ ИЗ КАТАЛОГА </span>
-            <h2>Автомобили, которые мы привозим из Европы</h2>
+          <div class="section-head section-head--catalog">
+            <h2>Автомобили, которые мы продаем</h2>
+            <a href="/catalog.html" class="btn-catalog-all">Посмотреть все</a>
           </div>
           <div class="car-search__pill">
             <div class="car-search__select" id="brandSelect">
@@ -417,6 +460,59 @@
               </div>
             </div>
 
+            <div
+              class="car-search__select car-search__select--mileage"
+              id="mileageSelect"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m12 14 4-4"></path>
+                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+              </svg>
+              <span class="car-search__value" data-placeholder="Пробег"
+                >Пробег</span
+              >
+              <svg
+                class="car-search__chevron"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <div class="car-search__dropdown" id="mileageDropdown">
+                <div class="car-search__option" data-value="">Любой пробег</div>
+                <div class="car-search__option" data-value="30000">
+                  До 30 000 км
+                </div>
+                <div class="car-search__option" data-value="60000">
+                  До 60 000 км
+                </div>
+                <div class="car-search__option" data-value="100000">
+                  До 100 000 км
+                </div>
+                <div class="car-search__option" data-value="150000">
+                  До 150 000 км
+                </div>
+                <div class="car-search__option" data-value="200000">
+                  До 200 000 км
+                </div>
+              </div>
+            </div>
+
             <button class="car-search__btn">
               <svg
                 width="20"
@@ -440,28 +536,26 @@
         <div class="container">
           <!-- <div class="section-head">
             <span class="section-label"> <i></i> ПРИМЕРЫ ИЗ КАТАЛОГА </span>
-            <h2>Автомобили, которые мы привозим из Европы</h2>
+            <h2>Автомобили, которые мы продаем</h2>
           </div> -->
           <div class="cars-grid">
             <!-- CARD -->
 
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/f16d331356_1065392_mobile.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/aa44356745_1104164_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/d72ce04a29_1104164_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Hyundai Santa Fe 2020</h3>
+                  <h3>Toyota RAV4 2026</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
-                    <span class="badge">Автомат</span>
+                    <span class="badge">Вариатор</span>
                   </div>
                   <div class="divider"></div>
                   <div class="car-specs">
@@ -483,7 +577,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>15 км</b>
                       </div>
                     </div>
 
@@ -516,7 +610,7 @@
                       </span>
                       <div>
                         <p>Коробка передач</p>
-                        <b>Автомат</b>
+                        <b>Вариатор</b>
                       </div>
                     </div>
 
@@ -591,7 +685,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>2.0 л</b>
                       </div>
                     </div>
                   </div>
@@ -599,31 +693,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">2 000 000 ₽ <span>под ключ</span></p>
-                    <a href="/carinner.html" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">4 234 434 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/c9749661b1_1037415_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/0bdafbbb8a_1103356_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/bb720689a6_1103356_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>BMW X7 2021</h3>
+                  <h3>Changan CS55 Plus 2023</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
-                    <span class="badge">Автомат</span>
+                    <span class="badge">Робот</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -644,7 +735,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>19 129 км</b>
                       </div>
                     </div>
 
@@ -677,7 +768,7 @@
                       </span>
                       <div>
                         <p>Коробка передач</p>
-                        <b>Автомат</b>
+                        <b>Робот</b>
                       </div>
                     </div>
 
@@ -752,7 +843,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>1.5 л</b>
                       </div>
                     </div>
                   </div>
@@ -760,31 +851,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">9 534 434 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">2 173 444 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/050bd89fe9_1062862_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/81cb5e7cc0_1103226_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/031ecbc569_1103226_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Mercedes-Benz E-Класс 2015</h3>
+                  <h3>Toyota Corolla 2013</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
-                    <span class="badge">Автомат</span>
+                    <span class="badge">Вариатор</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -805,7 +893,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>232 980 км</b>
                       </div>
                     </div>
 
@@ -838,7 +926,7 @@
                       </span>
                       <div>
                         <p>Коробка передач</p>
-                        <b>Автомат</b>
+                        <b>Вариатор</b>
                       </div>
                     </div>
 
@@ -913,7 +1001,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>1.6 л</b>
                       </div>
                     </div>
                   </div>
@@ -921,29 +1009,27 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">3 077 077 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">1 450 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/f16d331356_1065392_mobile.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/c18203f681_1103299_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/d8e05e3c00_1103299_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Hyundai Santa Fe 2020</h3>
+                  <h3>LADA (ВАЗ) Granta 2023</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
-                    <span class="badge">Автомат</span>
+                    <span class="badge">Механика</span>
                   </div>
                   <div class="divider"></div>
                   <div class="car-specs">
@@ -965,7 +1051,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>8 640 км</b>
                       </div>
                     </div>
 
@@ -998,7 +1084,7 @@
                       </span>
                       <div>
                         <p>Коробка передач</p>
-                        <b>Автомат</b>
+                        <b>Механика</b>
                       </div>
                     </div>
 
@@ -1073,7 +1159,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>1.6 л</b>
                       </div>
                     </div>
                   </div>
@@ -1081,31 +1167,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">2 000 000 ₽ <span>под ключ</span></p>
-                    <a href="/carinner.html" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">965 055 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/c9749661b1_1037415_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/613e7d09cd_1102820_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/286565364d_1102820_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>BMW X7 2021</h3>
+                  <h3>Audi A6 2019</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
-                    <span class="badge">Автомат</span>
+                    <span class="badge">Робот</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -1126,7 +1209,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>199 316 км</b>
                       </div>
                     </div>
 
@@ -1159,7 +1242,7 @@
                       </span>
                       <div>
                         <p>Коробка передач</p>
-                        <b>Автомат</b>
+                        <b>Робот</b>
                       </div>
                     </div>
 
@@ -1200,7 +1283,7 @@
                       </span>
                       <div>
                         <p>Тип топлива</p>
-                        <b>Бензин</b>
+                        <b>Дизель</b>
                       </div>
                     </div>
 
@@ -1234,7 +1317,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>2.0 л</b>
                       </div>
                     </div>
                   </div>
@@ -1242,31 +1325,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">9 534 434 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">3 899 077 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/050bd89fe9_1062862_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/42a6fdca6a_1102952_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/8083e8127e_1102952_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Mercedes-Benz E-Класс 2015</h3>
+                  <h3>Skoda Rapid 2019</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
                     <span class="badge">Автомат</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -1287,7 +1367,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>66 649 км</b>
                       </div>
                     </div>
 
@@ -1395,7 +1475,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>1.6 л</b>
                       </div>
                     </div>
                   </div>
@@ -1403,25 +1483,23 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">3 077 077 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">1 577 077 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/f16d331356_1065392_mobile.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/1816d7a48e_1101865_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/5b3e63f38e_1101865_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Hyundai Santa Fe 2020</h3>
+                  <h3>Kia Stinger 2018</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
@@ -1447,7 +1525,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>70 808 км</b>
                       </div>
                     </div>
 
@@ -1555,7 +1633,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>3.3 л</b>
                       </div>
                     </div>
                   </div>
@@ -1563,31 +1641,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">2 000 000 ₽ <span>под ключ</span></p>
-                    <a href="/carinner.html" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">3 476 444 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/c9749661b1_1037415_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/e6245a7af4_1104733_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/458e4dec66_1104733_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>BMW X7 2021</h3>
+                  <h3>Kia Optima 2018</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
                     <span class="badge">Автомат</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -1608,7 +1683,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>141 383 км</b>
                       </div>
                     </div>
 
@@ -1716,7 +1791,7 @@
                       </span>
                       <div>
                         <p>Объём двигателя</p>
-                        <b>3.0 л</b>
+                        <b>2.0 л</b>
                       </div>
                     </div>
                   </div>
@@ -1724,31 +1799,28 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">9 534 434 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">1 679 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="car-card">
+              <a href="/carinner.html" class="car-card">
                 <!-- IMAGE -->
                 <div class="car-image">
-                  <img
-                    src="https://cdn-b.freshauto.ru/050bd89fe9_1062862_original.webp"
-                    alt="car"
-                  />
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/32b6c36073_1101104_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/e693a88b34_1101104_original.webp" alt="" loading="lazy" aria-hidden="true" />
                 </div>
 
                 <!-- CONTENT -->
                 <div class="car-content">
-                  <h3>Mercedes-Benz E-Класс 2015</h3>
+                  <h3>BMW X5 2018</h3>
 
                   <div class="car-meta">
                     <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
                     <span class="badge">Автомат</span>
                   </div>
-
                   <div class="divider"></div>
                   <div class="car-specs">
                     <!-- PROBEG -->
@@ -1769,7 +1841,7 @@
                       </span>
                       <div>
                         <p>Пробег</p>
-                        <b>45 000 км</b>
+                        <b>164 749 км</b>
                       </div>
                     </div>
 
@@ -1885,23 +1957,1124 @@
                   <div class="divider"></div>
 
                   <div class="car-bottom">
-                    <p class="price">3 077 077 ₽ <span>под ключ</span></p>
-                    <a href="#" class="btn-car">ПОДРОБНЕЕ</a>
+                    <p class="price">5 299 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
-          </div>
-          <a href="/catalog.html" class="btn-premium">
-            <span>Все автомобили</span>
-            <i class="btn-icon"> → </i>
-          </a>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/2a0d81b385_1101546_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/dd66d6e970_1101546_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>BMW 5 серии 2021</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Автомат</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>59 285 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Автомат</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Бензин</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>2.0 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">4 638 444 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/666407363c_1085973_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/0c5846296d_1085973_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>Kia Sorento 2017</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Автомат</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>132 085 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Автомат</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Дизель</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>2.2 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">3 199 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/5a58c2d822_1102882_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/76a324b322_1102882_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>Jetour T2 2024</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Робот</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>99 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Робот</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Бензин</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>2.0 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">3 922 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/53c1431dc0_1100661_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/1a1888f129_1100661_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>Hyundai i30 2010</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Автомат</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>222 923 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Автомат</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Бензин</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>1.6 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">629 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/19586385aa_1101606_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/d8e5873466_1101606_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>Volkswagen Tiguan 2026</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Робот</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>33 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Робот</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Бензин</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>2.0 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">4 778 888 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/f0aca28db7_1100604_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/dfca8c94e1_1100604_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>BMW X6 2023</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Автомат</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>20 290 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Автомат</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Бензин</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>3.0 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">12 154 434 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/carinner.html" class="car-card">
+                <!-- IMAGE -->
+                <div class="car-image">
+                  <img class="car-image__primary" src="https://cdn-b.freshauto.ru/e9820fc5ca_1074752_original.webp" alt="car" loading="lazy" />
+                  <img class="car-image__hover" src="https://cdn-b.freshauto.ru/0b5e264dba_1074752_original.webp" alt="" loading="lazy" aria-hidden="true" />
+                </div>
+
+                <!-- CONTENT -->
+                <div class="car-content">
+                  <h3>Toyota Land Cruiser 2014</h3>
+
+                  <div class="car-meta">
+                    <span>ДОСТАВКА ИЗ ЕВРОПЫ</span>
+                    <span class="badge">Автомат</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="car-specs">
+                    <!-- PROBEG -->
+                    <div class="spec">
+                      <span class="icon mileage">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="m12 14 4-4"></path>
+                          <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Пробег</p>
+                        <b>269 539 км</b>
+                      </div>
+                    </div>
+
+                    <!-- GEARBOX -->
+                    <div class="spec">
+                      <span class="icon gearbox">
+                        <!-- Sənin FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <g
+                            fill=""
+                            stroke="#fff"
+                            stroke-width="40"
+                            stroke-linecap="round"
+                          >
+                            <circle cx="452" cy="60" r="40" />
+                            <circle cx="256" cy="60" r="40" />
+                            <circle cx="60" cy="60" r="40" />
+                            <circle cx="60" cy="452" r="40" />
+                            <circle cx="256" cy="452" r="40" />
+                            <circle cx="452" cy="452" r="40" />
+                            <path
+                              d="M452 100v112c0 22-18 40-40 40H60v160M60 252V100M256 100v312"
+                            />
+                            <path d="M452 332v80" />
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Коробка передач</p>
+                        <b>Автомат</b>
+                      </div>
+                    </div>
+
+                    <!-- FUEL -->
+                    <div class="spec">
+                      <span class="icon fuel">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="m466.208 67.125-42.667-42.667c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l35.125 35.125-35.125 35.125c-2 2-3.125 4.708-3.125 7.542v32C405.333 172.865 424.469 192 448 192v181.333c0 5.885-4.781 10.667-10.667 10.667-5.885 0-10.667-4.781-10.667-10.667V352c0-17.646-14.354-32-32-32H384V42.667C384 19.135 364.865 0 341.333 0H128c-23.531 0-42.667 19.135-42.667 42.667v384c-23.531 0-42.667 19.135-42.667 42.667v32a10.66 10.66 0 0 0 10.667 10.667H416a10.66 10.66 0 0 0 10.667-10.667v-32c0-23.531-19.135-42.667-42.667-42.667v-85.333h10.667c5.885 0 10.667 4.781 10.667 10.667v21.333c0 17.646 14.354 32 32 32s32-14.354 32-32V74.667a10.664 10.664 0 0 0-3.126-7.542zM106.667 42.667c0-11.76 9.573-21.333 21.333-21.333h213.333c11.76 0 21.333 9.573 21.333 21.333v384h-256v-384zm298.666 426.666v21.333H64v-21.333C64 457.573 73.573 448 85.333 448H384c11.76 0 21.333 9.573 21.333 21.333zM448 170.667c-11.76 0-21.333-9.573-21.333-21.333V121.75L448 100.417v70.25z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                            <path
+                              d="M330.667 42.667h-192A10.66 10.66 0 0 0 128 53.334v128.198a10.66 10.66 0 0 0 10.667 10.667h192a10.66 10.66 0 0 0 10.667-10.667V53.333a10.661 10.661 0 0 0-10.667-10.666zM320 170.865H149.333V64H320v106.865z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Тип топлива</p>
+                        <b>Дизель</b>
+                      </div>
+                    </div>
+
+                    <!-- ENGINE -->
+                    <div class="spec">
+                      <span class="icon engine">
+                        <!-- FULL SVG -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="512"
+                          height="512"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 60 60"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M55 28h-2a3 3 0 0 0-3 3v1h-2v-5a3 3 0 0 0-3-3h-3a1 1 0 0 1-1-1v-2a3 3 0 0 0-3-3h-4v-3h5a3 3 0 0 0 0-6H19a3 3 0 0 0 0 6h5v3h-5a3 3 0 0 0-3 3 1 1 0 0 1-1 1h-3a3 3 0 0 0-3 3v4H6v-4a3 3 0 0 0-6 0v16a3 3 0 0 0 6 0v-4h3v5a3 3 0 0 0 3 3h4.172a1 1 0 0 1 .707.293l4.828 4.828a2.978 2.978 0 0 0 2.121.879H45a3 3 0 0 0 3-3v-4h2v1a3 3 0 0 0 3 3h2a5.006 5.006 0 0 0 5-5V33a5.006 5.006 0 0 0-5-5zM18 12a1 1 0 0 1 1-1h20a1 1 0 0 1 0 2H19a1 1 0 0 1-1-1zm8 3h6v3h-6zM4 41a1 1 0 0 1-2 0V25a1 1 0 0 1 2 0zm2-6v-4h3v4zm40 13a1 1 0 0 1-1 1H23.828a1 1 0 0 1-.707-.293l-4.828-4.828A2.982 2.982 0 0 0 16.172 43H12a1 1 0 0 1-1-1V25a1 1 0 0 1 1-1h3a3 3 0 0 0 3-3 1 1 0 0 1 1-1h19a1 1 0 0 1 1 1v2a3 3 0 0 0 3 3h3a1 1 0 0 1 1 1zm2-6v-8h2v8zm10 1a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1V31a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3z"
+                              fill="#fff"
+                              opacity="1"
+                              data-original="#fff"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <div>
+                        <p>Объём двигателя</p>
+                        <b>4.5 л</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div class="car-bottom">
+                    <p class="price">3 848 050 ₽ <span>под ключ</span></p>
+                    <span class="btn-car">ПОДРОБНЕЕ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+                    </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
   <div class="container">
     <div class="section-head">
-      <span class="section-label"><i></i> Услуги</span>
       <h2>Забудьте о рисках и бюрократии — мы берём всё на себя</h2>
     </div>
 
@@ -1919,19 +3092,15 @@
         </div>
         <div class="services-cta-content">
           <div class="services-cta-top">
-            <h3>Оцените своё авто за 2 минуты</h3>
-            <p>Введите госномер и узнайте актуальную стоимость автомобиля на рынке</p>
+            <h3>Понравилась машина?</h3>
+            <p>Оставьте заявку, и мы свяжемся с вами, расскажем все детали и поможем оформить покупку.</p>
           </div>
           <div class="services-cta-bottom">
             <div class="services-cta-input">
-              <input type="text" placeholder="Х999ХХ999" maxlength="12" />
-              <div class="services-cta-rus">
-                <span>🇷🇺</span>
-                <small>RUS</small>
-              </div>
+              <input type="tel" placeholder="+7 (___) ___-__-__" maxlength="18" />
             </div>
-            <a href="tel:+79043430043" class="services-cta-btn">Оценить авто</a>
-            <a href="#contacts" class="services-cta-link">Не знаю госномер</a>
+            <button type="button" class="services-cta-btn modalBtn" data-btn="1">Оставить заявку</button>
+            <a href="tel:+79043430043" class="services-cta-link">Или позвонить: +7 904 343 00 43</a>
           </div>
         </div>
       </div>
@@ -1942,33 +3111,33 @@
 
           <div class="swiper-slide">
             <div class="service-card">
-              <img src="https://freshauto.ru/assets/blue_theme/tradein-ed030569aec24b2c1d5a7ece47277234e26bcae3a217fbb04f80575bd226a821.webp" alt="Кредитование" />
+              <img src="/assests/img/kredit.png" alt="Кредитование" />
               <div class="services-content">
                 <h3>Кредитование</h3>
                 <p>Поможем оформить автокредит на выгодных условиях — быстрое одобрение, минимальный взнос и прозрачные условия без скрытых платежей.</p>
-                <a href="#credit">Подробнее →</a>
+                <a href="#services">Подробнее</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="service-card">
-              <img src="https://freshauto.ru/assets/blue_theme/buyout-7ed57ffa556ec2b9cbad438ed9f771f8645e7f441b2bdf70bebeb2e8942ab878.webp" alt="Лизинг" />
+              <img src="/assests/img/lizng.png" alt="Лизинг" />
               <div class="services-content">
                 <h3>Лизинг для физ. лиц</h3>
                 <p>Получите автомобиль уже сегодня — лизинг с удобным графиком платежей и возможностью последующего выкупа.</p>
-                <a href="#credit">Подробнее →</a>
+                <a href="#services">Подробнее</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="service-card">
-              <img src="https://freshauto.ru/frontend/assets/static/default.CINoigJR.webp" alt="Страхование" />
+              <img src="/assests/img/straxovka.png" alt="Страхование" />
               <div class="services-content">
                 <h3>Страхование</h3>
                 <p>Оформим ОСАГО и КАСКО прямо у нас — подберём оптимальный тариф и поможем при наступлении страхового случая.</p>
-                <a href="#service">Подробнее →</a>
+                <a href="#services">Подробнее</a>
               </div>
             </div>
           </div>
@@ -1979,7 +3148,7 @@
               <div class="services-content">
                 <h3>Трейд-ин</h3>
                 <p>Обменяйте свой автомобиль на новый с доплатой — быстрая оценка, честная цена и зачёт стоимости в счёт покупки.</p>
-                <a href="#sell">Подробнее →</a>
+                <a href="#services">Подробнее</a>
               </div>
             </div>
           </div>
@@ -1990,7 +3159,7 @@
               <div class="services-content">
                 <h3>Продажа и выкуп авто</h3>
                 <p>Выкупим ваш автомобиль за 1 час — переоформим в ГИБДД и гарантируем юридическую чистоту сделки.</p>
-                <a href="#sell">Подробнее →</a>
+                <a href="#services">Подробнее</a>
               </div>
             </div>
           </div>
@@ -2001,10 +3170,9 @@
     </div>
   </div>
 </section>
-      <section class="brends section-padding">
+      <section class="brends section-padding" id="articles">
         <div class="container">
           <div class="section-head">
-            <span class="section-label"> <i></i> МАРКИ ИЗ ЕВРОПЫ </span>
             <h2>Популярные бренды, с которыми мы работаем</h2>
           </div>
           <div class="row">
@@ -2208,284 +3376,329 @@
                 />
               </div>
             </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img src="https://cdn.simpleicons.org/toyota" alt="Toyota" />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img
+                  src="https://autopole.ru/images/brands/Hyundai/Hyundai.svg"
+                  alt="Hyundai"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img src="https://cdn.simpleicons.org/bmw" alt="BMW" />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
+                  alt="Mercedes-Benz"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img src="https://cdn.simpleicons.org/kia" alt="Kia" />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img
+                  src="https://autopole.ru/images/brands/Chevrolet/Chevrolet.webp"
+                  alt="Chevrolet"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img src="https://cdn.simpleicons.org/volkswagen" alt="Volkswagen" />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img
+                  src="https://autopole.ru/images/brands/Honda/Honda.svg"
+                  alt="Honda"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img src="https://cdn.simpleicons.org/audi" alt="Audi" />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div
+                class="mouse-cursor-gradient-tracking brends-card"
+                style="--x: 155px; --y: 95px"
+              >
+                <img
+                  src="https://autopole.ru/images/brands/Volvo/Volvo.svg"
+                  alt="Volvo"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="why-us">
+      <section class="why-us" id="about">
         <div class="container">
-          <div class="section-head">
-            <span class="section-label"> <i></i> ПОЧЕМУ ВЫБИРАЮТ НАС </span>
-            <h2>Надёжная доставка и прозрачные условия</h2>
-          </div>
+          <div class="benefits-card">
+            <h2 class="benefits-card__title">
+              Преимущества автомобильного маркетплейса МаксАвто
+            </h2>
 
-          <div class="why-grid">
-            <!-- ITEM -->
-            <div class="why-item">
-              <div class="icon">
-                <img
-                  src="https://templatekit.selaraswp.com/rental/wp-content/uploads/sites/44/2025/10/car-share.png"
-                  alt=""
-                />
+            <div class="benefits-grid">
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="3" y="3" width="18" height="18" rx="3"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Проверенные автомобили</h3>
+                  <p>Каждый автомобиль проходит диагностику и проверку перед продажей и доставкой.</p>
+                </div>
               </div>
-              <h4>Широкий выбор на европейском рынке</h4>
-              <p>
-                Подбираем новые и подержанные авто под ваш бюджет — от городских
-                моделей до премиальных кроссоверов и внедорожников.
-              </p>
-            </div>
 
-            <!-- ITEM -->
-            <div class="why-item">
-              <div class="icon">
-                <img
-                  src="https://templatekit.selaraswp.com/rental/wp-content/uploads/sites/44/2025/10/24-hour.png"
-                  alt=""
-                />
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Юридическая гарантия</h3>
+                  <p>Проверяем историю авто и сопровождаем сделку — прозрачные документы и чистота оформления.</p>
+                </div>
               </div>
-              <h4>Сопровождение на всех этапах</h4>
-              <p>
-                На связи на протяжении подбора, покупки, доставки и оформления —
-                отвечаем на вопросы и держим вас в курсе статуса.
-              </p>
-            </div>
 
-            <!-- ITEM -->
-            <div class="why-item">
-              <div class="icon">
-                <img
-                  src="https://templatekit.selaraswp.com/rental/wp-content/uploads/sites/44/2025/10/map-car-sharing2.png"
-                  alt=""
-                />
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Техническая поддержка</h3>
+                  <p>Помогаем с ТО, ремонтом и консультациями — для вас и ваших близких.</p>
+                </div>
               </div>
-              <h4>Логистика и таможня</h4>
-              <p>
-                Организуем перевозку из страны покупки до пункта выдачи и
-                помогаем с документами, чтобы вы получили авто без лишней суеты.
-              </p>
-            </div>
 
-            <!-- ITEM -->
-            <div class="why-item">
-              <div class="icon">
-                <img
-                  src="https://templatekit.selaraswp.com/rental/wp-content/uploads/sites/44/2025/10/purchase.png"
-                  alt=""
-                />
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M5 17h14v-5H5v5zM5 9l2-4h10l2 4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="7.5" cy="17" r="1.5" fill="currentColor" stroke="none"/>
+                    <circle cx="16.5" cy="17" r="1.5" fill="currentColor" stroke="none"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Предпродажная подготовка</h3>
+                  <p>Единые стандарты внешней и технической подготовки для всех автомобилей в каталоге.</p>
+                </div>
               </div>
-              <h4>Прозрачные цены</h4>
-              <p>
-                Никаких скрытых платежей — вы платите только то, что видите.
-              </p>
-            </div>
 
-            <!-- ITEM -->
-            <div class="why-item">
-              <div class="icon">
-                <img
-                  src="https://templatekit.selaraswp.com/rental/wp-content/uploads/sites/44/2025/10/hand.png"
-                  alt=""
-                />
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M9 12h6M12 9v6" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Онлайн-кредитование</h3>
+                  <p>Кредит, лизинг и страхование — поможем оформить на выгодных условиях в одном месте.</p>
+                </div>
               </div>
-              <h4>Индивидуальный расчёт</h4>
-              <p>
-                Смета с учётом покупки, доставки и сопутствующих расходов —
-                заранее, без сюрпризов в процессе.
-              </p>
-            </div>
 
-            <!-- CTA CARD -->
-            <div class="why-cta">
-              <h3>Закажите доставку авто из Европы</h3>
-              <a
-                href="#"
-                onclick="
-                  openModal();
-                  return false;
-                "
-                class="btn-premium"
-                >РАССЧИТАТЬ СТОИМОСТЬ</a
-              >
+              <div class="benefits-item">
+                <div class="benefits-item__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M3 7h11v8H3V7zM14 10h4l3 3v2h-7v-5z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="7" cy="17" r="1.5" fill="currentColor" stroke="none"/>
+                    <circle cx="17" cy="17" r="1.5" fill="currentColor" stroke="none"/>
+                  </svg>
+                </div>
+                <div class="benefits-item__text">
+                  <h3>Доставка</h3>
+                  <p>Привезём автомобиль из Европы до пункта выдачи или организуем логистику под ключ.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="locations" id="contacts">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-label"><i></i> Контакты</span>
-      <h2>Наши адреса</h2>
-    </div>
+        <div class="container">
+          <div class="section-head section-head--catalog">
+            <h2>Контакты</h2>
+          </div>
 
-    <div class="locations-grid">
+          <div class="locations-grid">
+            <article class="location-card">
+              <div class="location-media">
+                <img
+                  src="/assests/img/card1.png"
+                  alt="Отдел продаж МаксАвто"
+                  loading="lazy"
+                />
+              </div>
+              <div class="location-info">
+                <h4>Отдел продаж и отдел оценки и выкуп</h4>
+                <p class="location-lead">Подбор, покупка и оценка автомобилей</p>
+                <div class="location-contacts location-contacts--cols">
+                  <ul class="location-phones">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79286193095">+7 928 619-30-95</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79612818070">+7 961 281-80-70</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79034301110">+7 903 430-11-10</a></li>
+                  </ul>
+                  <div class="location-contacts__aside">
+                    <ul class="location-phones">
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79604701165">+7 960 470-11-65</a></li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79034309990">+7 903 430-99-90</a></li>
+                    </ul>
+                    <a href="mailto:Maxlid2026@yandex.ru" class="location-email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"></rect><polyline points="2,4 12,13 22,4"></polyline></svg>Maxlid2026@yandex.ru</a>
+                  </div>
+                </div>
+                <a href="tel:+79286193095" class="location-btn">Позвонить</a>
+              </div>
+            </article>
 
-      <!-- CARD 1 -->
-      <div class="location-card">
-        <div class="location-map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.6173%2C55.7558&z=15&pt=37.6173,55.7558,pm2rdm"
-            frameborder="0" allowfullscreen
-          ></iframe>
-        </div>
-        <div class="location-info">
-          <h4>МаксАвто — Центр</h4>
-          <ul class="location-details">
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 482.6 482.6" fill="none"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"/></svg>
+            <article class="location-card">
+              <div class="location-media">
+                <img
+                  src="/assests/img/card2.png"
+                  alt="Кредитный отдел МаксАвто"
+                  loading="lazy"
+                />
               </div>
-              <a href="tel:+79043430043">+7 904 343 00 43</a>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <div class="location-info">
+                <h4>Кредитный отдел</h4>
+                <p class="location-lead">Кредит, лизинг и страхование</p>
+                <div class="location-contacts location-contacts--cols">
+                  <ul class="location-phones">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79034022270">+7 903 402-22-70</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><a href="tel:+79604701164">+7 960 470-11-64</a></li>
+                  </ul>
+                  <div class="location-contacts__aside">
+                    <div class="location-emails">
+                      <a href="mailto:kreditmaxavto@yandex.ru"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"></rect><polyline points="2,4 12,13 22,4"></polyline></svg>kreditmaxavto@yandex.ru</a>
+                      <a href="mailto:creditniyotdeln@yandex.ru"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"></rect><polyline points="2,4 12,13 22,4"></polyline></svg>creditniyotdeln@yandex.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="tel:+79034022270" class="location-btn">Позвонить</a>
               </div>
-              <span>Москва, ул. Примерная, 1</span>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <span>Без выходных, 9:00 — 21:00</span>
-            </li>
-          </ul>
-          <a href="https://yandex.ru/maps/?pt=37.6173,55.7558&z=15" target="_blank" class="location-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            Показать на карте
-          </a>
-        </div>
-      </div>
+            </article>
 
-      <!-- CARD 2 -->
-      <div class="location-card">
-        <div class="location-map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.6573%2C55.7358&z=15&pt=37.6573,55.7358,pm2rdm"
-            frameborder="0" allowfullscreen
-          ></iframe>
+            <article class="location-card">
+              <div class="location-media">
+                <img
+                  src="/assests/img/card3.png"
+                  alt="Приём звонков МаксАвто"
+                  loading="lazy"
+                />
+              </div>
+              <div class="location-info">
+                <h4>Приём звонков</h4>
+                <p class="location-lead">Основной номер для обращений</p>
+                <ul class="location-phones location-phones--main">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><div class="location-phones__stack"><span class="location-phones__label">Основной</span><a href="tel:+79043430043">+7 904 343-00-43</a></div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"></path></svg><div class="location-phones__stack"><span class="location-phones__label">Дополнительный</span><a href="tel:+79896160060">+7 989 616-00-60</a></div>
+                  </li>
+                </ul>
+                <a href="tel:+79043430043" class="location-btn">Позвонить</a>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="location-info">
-          <h4>МаксАвто — Север</h4>
-          <ul class="location-details">
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 482.6 482.6" fill="none"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"/></svg>
-              </div>
-              <a href="tel:+79043430043">+7 904 343 00 43</a>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              </div>
-              <span>Москва, ул. Северная, 10</span>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <span>Без выходных, 9:00 — 21:00</span>
-            </li>
-          </ul>
-          <a href="https://yandex.ru/maps/?pt=37.6573,55.7358&z=15" target="_blank" class="location-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            Показать на карте
-          </a>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="location-card">
-        <div class="location-map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.5973%2C55.7758&z=15&pt=37.5973,55.7758,pm2rdm"
-            frameborder="0" allowfullscreen
-          ></iframe>
-        </div>
-        <div class="location-info">
-          <h4>МаксАвто — Запад</h4>
-          <ul class="location-details">
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 482.6 482.6" fill="none"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z" fill="currentColor"/></svg>
-              </div>
-              <a href="tel:+79043430043">+7 904 343 00 43</a>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              </div>
-              <span>Москва, Западный пр-т, 5</span>
-            </li>
-            <li>
-              <div class="loc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <span>Без выходных, 9:00 — 21:00</span>
-            </li>
-          </ul>
-          <a href="https://yandex.ru/maps/?pt=37.5973,55.7758&z=15" target="_blank" class="location-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            Показать на карте
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
     </main>
     <footer class="footer">
       <div class="container first">
-        <a href="/" class="logo-footer">
-          <img src="/assests/img/maxlogo.webp" alt="" />
-        </a>
-        <div class="footer-container">
+        <div class="footer-top">
+          <a href="#top" class="logo-footer">
+            <img src="/assests/img/maxlogo.webp" alt="МаксАвто" />
+          </a>
+          <div class="footer-container">
           <div class="footer-col">
-            <h4>Купить</h4>
-            <a href="#">Новые авто</a>
-            <a href="#">Авто с пробегом</a>
-            <a href="#">Коммерческий транспорт</a>
-            <a href="#">Мотоциклы</a>
-            <a href="#">Подборки</a>
-
-            <h4 class="mt">Продать</h4>
-            <a href="#">Выкуп</a>
-            <a href="#">Обмен / Trade-in</a>
-            <a href="#">Комиссионная продажа</a>
+            <h4>Навигация</h4>
+            <a href="#top">Главная</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#articles">Статьи</a>
+            <a href="#contacts">Контакты</a>
           </div>
 
           <div class="footer-col">
             <h4>Услуги</h4>
-            <a href="#">Подбор авто</a>
-            <a href="#">Покупка онлайн с доставкой</a>
-            <a href="#">Кредит</a>
-            <a href="#">Автомобили от партнеров</a>
-            <a href="#">Удаленная комиссия</a>
-            <a href="#">Страхование</a>
-            <a href="#">Криминалистика</a>
-            <a href="#">Сервис</a>
-            <a href="#">Онлайн-запись в сервис</a>
-            <a href="#">Онлайн-оценка и выкуп авто</a>
+            <a href="#services">Кредитование</a>
+            <a href="#services">Лизинг для физ. лиц</a>
+            <a href="#services">Страхование</a>
+            <a href="#services">Трейд-ин</a>
+            <a href="#services">Продажа и выкуп авто</a>
           </div>
 
-          <div class="footer-col">
-            <h4>Компания</h4>
-            <a href="#">О компании</a>
-            <a href="#">Карьера</a>
-            <a href="#">Контакты</a>
-            <a href="#">Журнал</a>
-            <a href="#">Центр помощи семье и детям «Ярослава»</a>
-
-            <h4 class="mt">Партнерам</h4>
-            <a href="#">Аукцион</a>
-            <a href="#">Франшиза</a>
-            <a href="#">Обмен стоками B2B</a>
-            <a href="#">Корпоративным клиентам</a>
+          <div class="footer-col footer-col--articles">
+            <h4>Статьи</h4>
+            <a href="#articles">Популярные автомобильные бренды, с которыми мы работаем</a>
+            <a href="#articles">Как правильно выбрать автомобиль с пробегом</a>
+            <a href="#articles">Оформление покупки и доставка авто из Европы</a>
           </div>
 
           <div class="footer-col">
             <h4>Контакты</h4>
-            <a>+7 999 999 99 99</a>
-            <a>info@maxavto.ru</a>
+            <a href="tel:+79043430043">+7 904 343 00 43</a>
+            <a href="mailto:kvtikhonova1211@yandex.ru">kvtikhonova1211@yandex.ru</a>
 
             <p class="mt">
               Главный редактор<br />
@@ -2511,6 +3724,7 @@
                 <img src="/assests/img/maxmessencer.png" alt="" />
               </a>
             </div>
+          </div>
           </div>
         </div>
         <div class="politics">

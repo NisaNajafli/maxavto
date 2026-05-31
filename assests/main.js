@@ -4,10 +4,9 @@ const SLIDE_DELAY = 3000;
 document.querySelectorAll('.hero__title').forEach(title => {
   const words = title.textContent.trim().split(/\s+/);
   if (words.length < 2) return;
+  const rest = words.slice(2).join(' ');
   title.innerHTML =
-    words[0] +
-    '<br><span>' + words[1] + '</span> ' +
-    words.slice(2).join(' ');
+    words[0] + ' ' + words[1] + (rest ? '<br>' + rest : '');
 });
 
 // ── Bullets ──
@@ -102,49 +101,141 @@ const models = {
   Nissan:     ['Altima', 'Maxima', 'X-Trail', 'Qashqai', 'Patrol'],
 };
 
-const brandSelect   = document.getElementById('brandSelect');
-const modelSelect   = document.getElementById('modelSelect');
+const brandSelect = document.getElementById('brandSelect');
+const modelSelect = document.getElementById('modelSelect');
+const mileageSelect = document.getElementById('mileageSelect');
 const brandDropdown = document.getElementById('brandDropdown');
 const modelDropdown = document.getElementById('modelDropdown');
+const mileageDropdown = document.getElementById('mileageDropdown');
 
 let selectedBrand = null;
 
-// Toggle dropdown
 function toggleSelect(el) {
   const isOpen = el.classList.contains('open');
   document.querySelectorAll('.car-search__select').forEach(s => s.classList.remove('open'));
   if (!isOpen) el.classList.add('open');
 }
 
-brandSelect.addEventListener('click', e => { e.stopPropagation(); toggleSelect(brandSelect); });
-modelSelect.addEventListener('click', e => { e.stopPropagation(); toggleSelect(modelSelect); });
+function bindSimpleSelect(selectEl, dropdownEl) {
+  if (!selectEl || !dropdownEl) return;
 
-document.addEventListener('click', () => {
-  document.querySelectorAll('.car-search__select').forEach(s => s.classList.remove('open'));
-});
-
-// Brand seçimi
-brandDropdown.querySelectorAll('.car-search__option').forEach(opt => {
-  opt.addEventListener('click', e => {
+  selectEl.addEventListener('click', e => {
     e.stopPropagation();
-    selectedBrand = opt.dataset.value;
-    brandSelect.querySelector('.car-search__value').textContent = opt.textContent;
-    brandSelect.querySelector('.car-search__value').classList.add('selected');
-    brandSelect.classList.remove('open');
+    toggleSelect(selectEl);
+  });
 
-    // Model dropdown-u doldur
-    modelDropdown.innerHTML = '';
-    models[selectedBrand].forEach(m => {
-      const div = document.createElement('div');
-      div.className = 'car-search__option';
-      div.textContent = m;
-      div.addEventListener('click', e2 => {
-        e2.stopPropagation();
-        modelSelect.querySelector('.car-search__value').textContent = m;
-        modelSelect.querySelector('.car-search__value').classList.add('selected');
-        modelSelect.classList.remove('open');
-      });
-      modelDropdown.appendChild(div);
+  dropdownEl.querySelectorAll('.car-search__option').forEach(opt => {
+    opt.addEventListener('click', e => {
+      e.stopPropagation();
+      const valueEl = selectEl.querySelector('.car-search__value');
+      valueEl.textContent = opt.textContent;
+      valueEl.classList.add('selected');
+      selectEl.classList.remove('open');
     });
+  });
+}
+
+if (brandSelect && modelSelect && brandDropdown && modelDropdown) {
+  brandSelect.addEventListener('click', e => {
+    e.stopPropagation();
+    toggleSelect(brandSelect);
+  });
+  modelSelect.addEventListener('click', e => {
+    e.stopPropagation();
+    toggleSelect(modelSelect);
+  });
+
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.car-search__select').forEach(s => s.classList.remove('open'));
+  });
+
+  brandDropdown.querySelectorAll('.car-search__option').forEach(opt => {
+    opt.addEventListener('click', e => {
+      e.stopPropagation();
+      selectedBrand = opt.dataset.value;
+      brandSelect.querySelector('.car-search__value').textContent = opt.textContent;
+      brandSelect.querySelector('.car-search__value').classList.add('selected');
+      brandSelect.classList.remove('open');
+
+      const modelValue = modelSelect.querySelector('.car-search__value');
+      modelValue.textContent = modelValue.dataset.placeholder || 'Модель';
+      modelValue.classList.remove('selected');
+
+      modelDropdown.innerHTML = '';
+      models[selectedBrand].forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'car-search__option';
+        div.textContent = m;
+        div.addEventListener('click', e2 => {
+          e2.stopPropagation();
+          modelSelect.querySelector('.car-search__value').textContent = m;
+          modelSelect.querySelector('.car-search__value').classList.add('selected');
+          modelSelect.classList.remove('open');
+        });
+        modelDropdown.appendChild(div);
+      });
+    });
+  });
+
+  bindSimpleSelect(mileageSelect, mileageDropdown);
+}
+
+(function () {
+  const marquee = document.querySelector('._logoMarquee_50ytu_157');
+  if (!marquee) return;
+
+  const lists = marquee.querySelectorAll('._logoMarqueeList_50ytu_164');
+  if (lists.length < 2) return;
+
+  const list1 = lists[0];
+  const list2 = lists[1];
+
+  marquee.style.display = 'flex';
+  marquee.style.overflow = 'hidden';
+  marquee.style.position = 'relative';
+
+  list1.style.flexShrink = '0';
+  list2.style.flexShrink = '0';
+
+  let offset = 0;
+  let listWidth = 0;
+
+  function measure() {
+    listWidth = list1.scrollWidth;
+  }
+
+  function tick() {
+    offset += 2;
+    if (offset >= listWidth) {
+      offset = 0;
+    }
+    list1.style.transform = `translateX(-${offset}px)`;
+    list2.style.transform = `translateX(-${offset}px)`;
+    requestAnimationFrame(tick);
+  }
+
+  measure();
+  window.addEventListener('resize', measure);
+  requestAnimationFrame(tick);
+})();
+document.querySelectorAll('._faq_item').forEach(item => {
+  const answer = item.querySelector('._faq_answer');
+
+  if (item.classList.contains('active')) {
+    answer.style.height = answer.scrollHeight + 'px';
+  }
+
+  item.querySelector('._faq_question').addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
+
+    document.querySelectorAll('._faq_item').forEach(i => {
+      i.classList.remove('active');
+      i.querySelector('._faq_answer').style.height = '0px';
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.height = answer.scrollHeight + 'px';
+    }
   });
 });
