@@ -218,6 +218,336 @@ if (brandSelect && modelSelect && brandDropdown && modelDropdown) {
   window.addEventListener('resize', measure);
   requestAnimationFrame(tick);
 })();
+// ── Request modal ──
+(function initRequestModal() {
+  const MODAL_TRIGGER_RE =
+    /(оставить\s+заявку|связаться\s+с\s+нами|получить\s+консультацию|заказать\s+звонок|^связаться$)/i;
+
+  function getTriggerLabel(el) {
+    return (el.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function isSubmitControl(el) {
+    if (!el) return false;
+    if (el.matches('button[type="submit"], input[type="submit"]')) return true;
+    if (el.closest('form') && el.matches('button:not([type]), button[type="submit"], input[type="submit"]')) {
+      const type = (el.getAttribute('type') || 'submit').toLowerCase();
+      return type === 'submit';
+    }
+    return false;
+  }
+
+  function isModalTrigger(el) {
+    if (!el || el.closest('.request-modal')) return false;
+    if (el.hasAttribute('data-no-modal')) return false;
+    if (isSubmitControl(el)) return false;
+    if (el.classList.contains('modalBtn')) return true;
+    if (el.tagName !== 'BUTTON' && el.tagName !== 'A') return false;
+    return MODAL_TRIGGER_RE.test(getTriggerLabel(el));
+  }
+
+  function createModal() {
+    if (document.getElementById('requestModal')) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'request-modal';
+    modal.id = 'requestModal';
+    modal.setAttribute('aria-hidden', 'true');
+    modal.innerHTML = `
+      <div class="request-modal__overlay" data-modal-close></div>
+      <div
+        class="request-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="requestModalTitle"
+      >
+        <button type="button" class="request-modal__close" data-modal-close aria-label="Закрыть">&times;</button>
+        <h2 id="requestModalTitle" class="request-modal__title">Оставить заявку</h2>
+        <p class="request-modal__subtitle">
+          Оставьте контакты — менеджер свяжется с вами и проконсультирует по покупке, кредиту, лизингу и страхованию.
+        </p>
+        <form class="request-modal__form" id="requestModalForm">
+          <input type="text" name="name" placeholder="Имя" autocomplete="name" required>
+          <input type="tel" name="phone" placeholder="Номер телефона" autocomplete="tel" required>
+          <input type="email" name="email" placeholder="Email (необязательно)" autocomplete="email">
+          <textarea name="message" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+          <button type="submit" class="request-modal__submit">Отправить заявку</button>
+        </form>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    modal.querySelectorAll('[data-modal-close]').forEach(el => {
+      el.addEventListener('click', closeModal);
+    });
+
+    modal.querySelector('#requestModalForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      const dialog = modal.querySelector('.request-modal__dialog');
+      const title = modal.querySelector('.request-modal__title');
+      const subtitle = modal.querySelector('.request-modal__subtitle');
+
+      form.remove();
+      if (subtitle) subtitle.remove();
+      title.textContent = 'Заявка отправлена';
+
+      const success = document.createElement('p');
+      success.className = 'request-modal__success';
+      success.textContent =
+        'Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.';
+      dialog.appendChild(success);
+    });
+  }
+
+  function openModal() {
+    createModal();
+    const modal = document.getElementById('requestModal');
+    if (!modal) return;
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    const mainButton = document.getElementById('main-button');
+    if (mainButton) mainButton.classList.remove('open');
+
+    const firstInput = modal.querySelector('input[name="name"]');
+    if (firstInput) {
+      requestAnimationFrame(() => firstInput.focus());
+    }
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('requestModal');
+    if (!modal) return;
+
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  window.openModal = openModal;
+  window.closeModal = closeModal;
+
+  document.addEventListener('click', e => {
+    const trigger = e.target.closest('a, button');
+    if (!trigger || !isModalTrigger(trigger)) return;
+
+    e.preventDefault();
+    openModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+})();
+
+(function initMobileMenu() {
+  const triggers = [
+    document.getElementById('navTrigger'),
+    document.getElementById('navTrigger2'),
+  ].filter(Boolean);
+  const headerNav = document.querySelector('header .headernav nav ul');
+
+  if (!triggers.length || !headerNav) return;
+
+  const phoneIcon =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>';
+  const mailIcon =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2,4 12,13 22,4"/></svg>';
+
+  function getContactLink(selectors) {
+    for (const selector of selectors) {
+      const link = document.querySelector(selector);
+      if (link?.getAttribute('href')) return link;
+    }
+    return null;
+  }
+
+  function getSocialLinks() {
+    const links = [
+      {
+        href: 'https://wa.me/79189179163',
+        img: '/assests/img/whatsapp.svg',
+        label: 'WhatsApp',
+      },
+      {
+        href: 'https://t.me/+79043430043',
+        img: '/assests/img/telegram.svg',
+        label: 'Telegram',
+      },
+      {
+        href: '/contacts.html',
+        img: '/assests/img/maxmessencer.png',
+        label: 'MAX',
+      },
+    ];
+
+    const widgetWhatsApp = document.getElementById('wrapper_whatsapp');
+    const widgetTelegram = document.getElementById('wrappertg');
+    const widgetMax = document.querySelector('#main-div a[title="mesenger"], #main-div a[title="messenger"]');
+
+    if (widgetWhatsApp?.href?.startsWith('http')) links[0].href = widgetWhatsApp.href;
+    if (widgetTelegram?.href?.startsWith('http')) links[1].href = widgetTelegram.href;
+    if (widgetMax?.href?.startsWith('http')) links[2].href = widgetMax.href;
+
+    document.querySelectorAll('footer .icons a[href]').forEach((link, index) => {
+      const href = link.getAttribute('href')?.trim();
+      const img = link.querySelector('img')?.getAttribute('src');
+      if (!href?.startsWith('http') || !img || !links[index]) return;
+      links[index].href = href;
+      links[index].img = img;
+    });
+
+    return links;
+  }
+
+  function createMenuModal() {
+    document.getElementById('siteMenuModal')?.remove();
+
+    const logo = document.querySelector('header .logo img');
+    const emailLink = getContactLink(['header .phone a[href^="mailto:"]']);
+    const phoneLink = getContactLink([
+      'header .icons__phone[href^="tel:"]',
+      'header .icons a[href^="tel:"]',
+    ]);
+    const socials = getSocialLinks();
+
+    const modal = document.createElement('div');
+    modal.className = 'site-menu-modal';
+    modal.id = 'siteMenuModal';
+    modal.setAttribute('aria-hidden', 'true');
+
+    modal.innerHTML = `
+      <div class="site-menu-modal__overlay" data-menu-close></div>
+      <div class="site-menu-modal__panel" role="dialog" aria-modal="true" aria-labelledby="siteMenuTitle">
+        <div class="site-menu-modal__head">
+          <div class="site-menu-modal__brand">
+            ${logo ? `<img src="${logo.getAttribute('src')}" alt="${logo.getAttribute('alt') || 'МаксАвто'}">` : ''}
+          </div>
+          <button type="button" class="site-menu-modal__close" data-menu-close aria-label="Закрыть меню">&times;</button>
+        </div>
+       
+        <nav class="site-menu-modal__nav" aria-label="Навигация"></nav>
+        <div class="site-menu-modal__contacts"></div>
+        <div class="site-menu-modal__socials">
+          <span class="site-menu-modal__socials-label">Мы в соцсетях</span>
+          <div class="site-menu-modal__socials-row"></div>
+        </div>
+        <button type="button" class="site-menu-modal__cta modalBtn">Оставить заявку</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    const navList = modal.querySelector('.site-menu-modal__nav');
+    navList.appendChild(headerNav.cloneNode(true));
+
+    const contacts = modal.querySelector('.site-menu-modal__contacts');
+    if (phoneLink) {
+      contacts.insertAdjacentHTML(
+        'beforeend',
+        `<a href="${phoneLink.getAttribute('href')}" class="site-menu-modal__contact">
+          <span class="site-menu-modal__contact-icon">${phoneIcon}</span>
+          <span class="site-menu-modal__contact-text">${phoneLink.textContent.trim()}</span>
+        </a>`,
+      );
+    }
+    if (emailLink) {
+      contacts.insertAdjacentHTML(
+        'beforeend',
+        `<a href="${emailLink.getAttribute('href')}" class="site-menu-modal__contact">
+          <span class="site-menu-modal__contact-icon">${mailIcon}</span>
+          <span class="site-menu-modal__contact-text">${emailLink.textContent.trim()}</span>
+        </a>`,
+      );
+    }
+
+    const socialsRow = modal.querySelector('.site-menu-modal__socials-row');
+    socials.forEach((social) => {
+      const item = document.createElement('a');
+      item.className = 'site-menu-modal__social';
+      item.href = social.href;
+      item.target = '_blank';
+      item.rel = 'noopener noreferrer';
+      item.setAttribute('aria-label', social.label);
+      item.innerHTML = `<img src="${social.img}" alt="">`;
+      socialsRow.appendChild(item);
+    });
+
+    modal.querySelectorAll('[data-menu-close]').forEach((el) => {
+      el.addEventListener('click', closeMenu);
+    });
+
+    modal.querySelectorAll('.site-menu-modal__nav a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    modal.querySelector('.site-menu-modal__cta')?.addEventListener('click', closeMenu);
+  }
+
+  function setMenuOpen(isOpen) {
+    const modal = document.getElementById('siteMenuModal');
+    if (!modal) return;
+
+    modal.classList.toggle('is-open', isOpen);
+    modal.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    document.body.classList.toggle('menu-open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+
+    triggers.forEach((trigger) => {
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
+  function openMenu() {
+    createMenuModal();
+    setMenuOpen(true);
+  }
+
+  function toggleMenu() {
+    const modal = document.getElementById('siteMenuModal');
+    if (modal?.classList.contains('is-open')) closeMenu();
+    else openMenu();
+  }
+
+  window.closeSiteMenu = closeMenu;
+
+  triggers.forEach((trigger) => {
+    trigger.setAttribute('role', 'button');
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.setAttribute('aria-label', 'Открыть меню');
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      toggleMenu();
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const modal = document.getElementById('siteMenuModal');
+    if (modal?.classList.contains('is-open')) closeMenu();
+  });
+})();
+
+document.querySelectorAll('.brends-card').forEach((card) => {
+  if (card.closest('a.brends-card-link')) return;
+
+  const link = document.createElement('a');
+  link.href = '/catalog.html';
+  link.className = 'brends-card-link';
+  link.setAttribute('aria-label', 'Перейти в каталог');
+  card.parentNode.insertBefore(link, card);
+  link.appendChild(card);
+});
+
 document.querySelectorAll('._faq_item').forEach(item => {
   const answer = item.querySelector('._faq_answer');
 

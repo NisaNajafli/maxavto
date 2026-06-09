@@ -20,9 +20,9 @@
       href="/assests/img/icon.webp"
       type="image/x-icon"
     />
-    <title>МаксАвто — автомобили с пробегом, продажа и выкуп</title>
+    <title>Каталог автомобилей — МаксАвто</title>
   </head>
-  <body class="page-home">
+  <body>
     <div class="wrapper">
       <div id="main-div">
         <div id="main-button" class="chat-pulse">
@@ -253,222 +253,148 @@
         </div>
       </div>
     </header>
-
     <main>
-      <section class="hero" id="top">
+      <section class="bredcrumb">
         <div class="container">
-          <div class="swiper heroSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide hero__slide hero__slide--1">
-                <div class="hero__content">
-                  <h1 class="hero__title">МАКС АВТО — ваш партнёр.</h1>
-                  <p class="hero__desc">
-                    Автомобили с пробегом в комфортных и прозрачных условиях.
-                    Поддержка 24/7: ОСАГО, КАСКО, ТО, ремонт и консультации —
-                    для вас и ваших друзей.
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide hero__slide hero__slide--2">
-                <div class="hero__content">
-                  <h1 class="hero__title">ЮРИДИЧЕСКАЯ чистота.</h1>
-                  <p class="hero__desc">
-                    Гарантируем юридическую чистоту сделки.<br />
-                    Переоформление приобретённого автомобиля в ГИБДД — всего за
-                    1 час.
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide hero__slide hero__slide--3">
-                <div class="hero__content">
-                  <h1 class="hero__title">КРЕДИТ ЛИЗИНГ страхование.</h1>
-                  <p class="hero__desc">
-                    Кредитование и лизинг для физических лиц, страхование,
-                    трейд-ин, продажа и выкуп автомобилей — всё в одном месте.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Временно скрытый 4 слайд hero
-              <div class="swiper-slide hero__slide hero__slide--4">
-                <div class="hero__content">
-                  <h1 class="hero__title">НАДЁЖНАЯ продажа авто.</h1>
-                  <p class="hero__desc">
-                    Проверенные автомобили, честные условия и сопровождение на
-                    каждом этапе.<br />
-                    Покупайте с уверенностью — мы отвечаем за качество сделки.
-                  </p>
-                </div>
-              </div>
-              -->
-            </div>
-
-            <div class="hero__pagination">
-              <div class="hero__bullet"><span></span></div>
-              <div class="hero__bullet"><span></span></div>
-              <div class="hero__bullet"><span></span></div>
-              <div class="hero__bullet"><span></span></div>
-            </div>
-            <!-- 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
+          <div class="speedbar">
+            <div class="over"><a href="/">Главная</a> » Каталог</div>
           </div>
         </div>
       </section>
-      <section class="car-search" id="catalog">
+      <section class="car-filter-section mt-8">
         <div class="container">
-          <div class="section-head section-head--catalog">
-            <h2>Автомобили, которые мы продаем</h2>
-            <a href="/catalog.html" class="btn-catalog-all">Посмотреть все</a>
-          </div>
-          <div class="car-search__pill">
-            <div class="car-search__select" id="brandSelect">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-              <span class="car-search__value" data-placeholder="Марка"
-                >Марка</span
-              >
-              <svg
-                class="car-search__chevron"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <div class="car-search__dropdown" id="brandDropdown">
-                <div class="car-search__option" data-value="BMW">BMW</div>
-                <div class="car-search__option" data-value="Mercedes">
-                  Mercedes-Benz
-                </div>
-                <div class="car-search__option" data-value="Audi">Audi</div>
-                <div class="car-search__option" data-value="Toyota">Toyota</div>
-                <div class="car-search__option" data-value="Hyundai">
-                  Hyundai
-                </div>
-                <div class="car-search__option" data-value="Kia">Kia</div>
-                <div class="car-search__option" data-value="Volkswagen">
-                  Volkswagen
-                </div>
-                <div class="car-search__option" data-value="Nissan">Nissan</div>
+          <form
+            id="car-advanced-filter"
+            class="car-filter"
+            data-source-category="3"
+            autocomplete="off"
+          >
+            <div class="car-filter__grid">
+              <label class="car-filter__field">
+                <span>Бренд</span>
+                <select name="car_brend" data-car-filter-options="car_brend">
+                  <option value="">Все</option>
+                  <option value="Hyundai">Hyundai</option>
+                  <option value="Kia">Kia</option>
+                  <option value="Lexus">Lexus</option>
+                  <option value="Mercedes-Benz">Mercedes-Benz</option>
+                </select>
+              </label>
+              <label class="car-filter__field">
+                <span>Модель</span>
+                <select
+                  name="car_marka"
+                  data-car-filter-options="car_marka"
+                  disabled=""
+                >
+                  <option value="">Все</option>
+                </select>
+              </label>
+              <label class="car-filter__field">
+                <span>Трансмиссия</span>
+                <select
+                  name="car_transmission"
+                  data-car-filter-options="car_transmission"
+                >
+                  <option value="">Все</option>
+                  <option value="Автоматическая">Автоматическая</option>
+                </select>
+              </label>
+              <label class="car-filter__field">
+                <span>Двигатель</span>
+                <select
+                  name="car_dviqatel"
+                  data-car-filter-options="car_dviqatel"
+                >
+                  <option value="">Все</option>
+                  <option value="Бензиновый">Бензиновый</option>
+                  <option value="Гибридный">Гибридный</option>
+                  <option value="Дизельный">Дизельный</option>
+                </select>
+              </label>
+
+              <div class="car-filter__range">
+                <span>Пробег</span>
+                <input
+                  type="number"
+                  name="car_km_min"
+                  min="0"
+                  step="1"
+                  placeholder="Min"
+                />
+                <input
+                  type="number"
+                  name="car_km_max"
+                  min="0"
+                  step="1"
+                  placeholder="Max"
+                />
+              </div>
+              <div class="car-filter__range">
+                <span>Стоимость под ключ</span>
+                <input
+                  type="number"
+                  name="car_price_min"
+                  min="0"
+                  step="1"
+                  placeholder="Min"
+                />
+                <input
+                  type="number"
+                  name="car_price_max"
+                  min="0"
+                  step="1"
+                  placeholder="Max"
+                />
+              </div>
+              <div class="car-filter__range">
+                <span>Mощность</span>
+                <input
+                  type="number"
+                  name="car_horsepower_min"
+                  min="0"
+                  step="1"
+                  placeholder="Min"
+                />
+                <input
+                  type="number"
+                  name="car_horsepower_max"
+                  min="0"
+                  step="1"
+                  placeholder="Max"
+                />
+              </div>
+              <div class="car-filter__range">
+                <span>Год</span>
+                <input
+                  type="number"
+                  name="car_year_min"
+                  min="1900"
+                  step="1"
+                  placeholder="Min"
+                />
+                <input
+                  type="number"
+                  name="car_year_max"
+                  min="1900"
+                  step="1"
+                  placeholder="Max"
+                />
               </div>
             </div>
 
-            <div
-              class="car-search__select car-search__select--model"
-              id="modelSelect"
-            >
-              <span class="car-search__value" data-placeholder="Модель"
-                >Модель</span
-              >
-              <svg
-                class="car-search__chevron"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <div class="car-search__dropdown" id="modelDropdown">
-                <div class="car-search__option car-search__option--empty">
-                  Сначала выберите марку
-                </div>
-              </div>
+            <div class="car-filter__actions">
+              <p
+                id="car-filter-status"
+                class="car-filter__status"
+                aria-live="polite"
+              ></p>
+              <button type="reset" class="car-filter__reset">
+                Сбросить
+              </button>
+              <button type="submit" class="car-filter__submit">Поиск</button>
             </div>
-
-            <div
-              class="car-search__select car-search__select--mileage"
-              id="mileageSelect"
-            >
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m12 14 4-4"></path>
-                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
-              </svg>
-              <span class="car-search__value" data-placeholder="Пробег"
-                >Пробег</span
-              >
-              <svg
-                class="car-search__chevron"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <div class="car-search__dropdown" id="mileageDropdown">
-                <div class="car-search__option" data-value="">Любой пробег</div>
-                <div class="car-search__option" data-value="30000">
-                  До 30 000 км
-                </div>
-                <div class="car-search__option" data-value="60000">
-                  До 60 000 км
-                </div>
-                <div class="car-search__option" data-value="100000">
-                  До 100 000 км
-                </div>
-                <div class="car-search__option" data-value="150000">
-                  До 150 000 км
-                </div>
-                <div class="car-search__option" data-value="200000">
-                  До 200 000 км
-                </div>
-              </div>
-            </div>
-
-            <a href="/catalog.html" class="car-search__btn">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-              Показать авто
-            </a>
-          </div>
+          </form>
         </div>
       </section>
       <section class="cars">
@@ -5308,879 +5234,6 @@
                 </div>
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="services" id="services">
-        <div class="container">
-          <div class="section-head">
-            <h2>Забудьте о рисках и бюрократии — мы берём всё на себя</h2>
-          </div>
-
-          <div class="services-layout">
-            <!-- SOL CARD -->
-            <div class="services-cta-card">
-              <div class="services-cta-bg">
-                <img
-                  src="https://freshauto.ru/assets/blue_theme/cost-99aecb001280535c1b5b7aaf63611df948e5a7b8c229c56f766d80ce6fcbcf84.webp"
-                  alt=""
-                  class="services-cta-car-img"
-                />
-                <div class="services-cta-overlay"></div>
-              </div>
-              <div class="services-cta-content">
-                <div class="services-cta-top">
-                  <h3>Понравилась машина?</h3>
-                  <p>
-                    Оставьте заявку, и мы свяжемся с вами, расскажем все детали
-                    и поможем оформить покупку.
-                  </p>
-                </div>
-                <div class="services-cta-bottom">
-                  <div class="services-cta-input">
-                    <input
-                      type="tel"
-                      placeholder="+7 (___) ___-__-__"
-                      maxlength="18"
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    class="services-cta-btn modalBtn"
-                    data-btn="1"
-                  >
-                    Оставить заявку
-                  </button>
-                  <a href="tel:+79043430043" class="services-cta-link"
-                    >Или позвонить: +7 904 343 00 43</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- SAĞ SWIPER -->
-            <div class="swiper servicesSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <img src="/assests/img/kredit.png" alt="Кредитование" />
-                    <div class="services-content">
-                      <h3>Кредитование</h3>
-                      <p>
-                        Поможем оформить автокредит на выгодных условиях —
-                        быстрое одобрение, минимальный взнос и прозрачные
-                        условия без скрытых платежей.
-                      </p>
-                      <a href="/services.html">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <img src="/assests/img/lizng.png" alt="Лизинг" />
-                    <div class="services-content">
-                      <h3>Лизинг для физ. лиц</h3>
-                      <p>
-                        Получите автомобиль уже сегодня — лизинг с удобным
-                        графиком платежей и возможностью последующего выкупа.
-                      </p>
-                      <a href="/services.html">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <img src="/assests/img/straxovka.png" alt="Страхование" />
-                    <div class="services-content">
-                      <h3>Страхование</h3>
-                      <p>
-                        Оформим ОСАГО и КАСКО прямо у нас — подберём оптимальный
-                        тариф и поможем при наступлении страхового случая.
-                      </p>
-                      <a href="/services.html">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <img
-                      src="https://freshauto.ru/assets/blue_theme/tradein-ed030569aec24b2c1d5a7ece47277234e26bcae3a217fbb04f80575bd226a821.webp"
-                      alt="Трейд-ин"
-                    />
-                    <div class="services-content">
-                      <h3>Трейд-ин</h3>
-                      <p>
-                        Обменяйте свой автомобиль на новый с доплатой — быстрая
-                        оценка, честная цена и зачёт стоимости в счёт покупки.
-                      </p>
-                      <a href="/services.html">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="service-card">
-                    <img
-                      src="https://freshauto.ru/assets/blue_theme/buyout-7ed57ffa556ec2b9cbad438ed9f771f8645e7f441b2bdf70bebeb2e8942ab878.webp"
-                      alt="Продажа и выкуп"
-                    />
-                    <div class="services-content">
-                      <h3>Продажа и выкуп авто</h3>
-                      <p>
-                        Выкупим ваш автомобиль за 1 час — переоформим в ГИБДД и
-                        гарантируем юридическую чистоту сделки.
-                      </p>
-                      <a href="/services.html">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="brends section-padding" id="articles">
-        <div class="container">
-          <div class="section-head">
-            <h2>Популярные бренды, с которыми мы работаем</h2>
-          </div>
-          <div class="row">
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/toyota" alt="" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Hyundai/Hyundai.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/bmw" alt="" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/kia" alt="" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Chevrolet/Chevrolet.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/volkswagen" alt="" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Honda/Honda.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/audi" alt="" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Volvo/Volvo.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Citroen/citroen.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Dongfeng/dongfeng.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/EXEED/exeed.png"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/FAW/faw.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/KAIYI/kaiyi.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Livan/livan.png"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Opel/Opel.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/VOYAH/voyah.png"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/toyota" alt="Toyota" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Hyundai/Hyundai.svg"
-                  alt="Hyundai"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/bmw" alt="BMW" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
-                  alt="Mercedes-Benz"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/kia" alt="Kia" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Chevrolet/Chevrolet.webp"
-                  alt="Chevrolet"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://cdn.simpleicons.org/volkswagen"
-                  alt="Volkswagen"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Honda/Honda.svg"
-                  alt="Honda"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img src="https://cdn.simpleicons.org/audi" alt="Audi" />
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="mouse-cursor-gradient-tracking brends-card"
-                style="--x: 155px; --y: 95px"
-              >
-                <img
-                  src="https://autopole.ru/images/brands/Volvo/Volvo.svg"
-                  alt="Volvo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="why-us" id="about">
-        <div class="container">
-          <div class="benefits-card">
-            <h2 class="benefits-card__title">
-              Преимущества автомобильного маркетплейса МаксАвто
-            </h2>
-
-            <div class="benefits-grid">
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path
-                      d="M9 12l2 2 4-4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <rect x="3" y="3" width="18" height="18" rx="3" />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Проверенные автомобили</h3>
-                  <p>
-                    Каждый автомобиль проходит диагностику и проверку перед
-                    продажей и доставкой.
-                  </p>
-                </div>
-              </div>
-
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path
-                      d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Юридическая гарантия</h3>
-                  <p>
-                    Проверяем историю авто и сопровождаем сделку — прозрачные
-                    документы и чистота оформления.
-                  </p>
-                </div>
-              </div>
-
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path
-                      d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Техническая поддержка</h3>
-                  <p>
-                    Помогаем с ТО, ремонтом и консультациями — для вас и ваших
-                    близких.
-                  </p>
-                </div>
-              </div>
-
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path
-                      d="M5 17h14v-5H5v5zM5 9l2-4h10l2 4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle
-                      cx="7.5"
-                      cy="17"
-                      r="1.5"
-                      fill="currentColor"
-                      stroke="none"
-                    />
-                    <circle
-                      cx="16.5"
-                      cy="17"
-                      r="1.5"
-                      fill="currentColor"
-                      stroke="none"
-                    />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Предпродажная подготовка</h3>
-                  <p>
-                    Единые стандарты внешней и технической подготовки для всех
-                    автомобилей в каталоге.
-                  </p>
-                </div>
-              </div>
-
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M9 12h6M12 9v6" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Онлайн-кредитование</h3>
-                  <p>
-                    Кредит, лизинг и страхование — поможем оформить на выгодных
-                    условиях в одном месте.
-                  </p>
-                </div>
-              </div>
-
-              <div class="benefits-item">
-                <div class="benefits-item__icon" aria-hidden="true">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  >
-                    <path
-                      d="M3 7h11v8H3V7zM14 10h4l3 3v2h-7v-5z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle
-                      cx="7"
-                      cy="17"
-                      r="1.5"
-                      fill="currentColor"
-                      stroke="none"
-                    />
-                    <circle
-                      cx="17"
-                      cy="17"
-                      r="1.5"
-                      fill="currentColor"
-                      stroke="none"
-                    />
-                  </svg>
-                </div>
-                <div class="benefits-item__text">
-                  <h3>Доставка</h3>
-                  <p>
-                    Привезём автомобиль из Европы до пункта выдачи или
-                    организуем логистику под ключ.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="locations" id="contacts">
-        <div class="container">
-          <div class="section-head section-head--catalog">
-            <h2>Контакты</h2>
-          </div>
-
-          <div class="locations-grid">
-            <article class="location-card">
-              <div class="location-media">
-                <img
-                  src="/assests/img/card1.png"
-                  alt="Отдел продаж МаксАвто"
-                  loading="lazy"
-                />
-              </div>
-              <div class="location-info">
-                <h4>Отдел продаж и отдел оценки и выкуп</h4>
-                <p class="location-lead">
-                  Подбор, покупка и оценка автомобилей
-                </p>
-                <div class="location-contacts location-contacts--cols">
-                  <ul class="location-phones">
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 482.6 482.6"
-                      >
-                        <path
-                          d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                          fill="currentColor"
-                        ></path></svg
-                      ><a href="tel:+79286193095">+7 928 619-30-95</a>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 482.6 482.6"
-                      >
-                        <path
-                          d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                          fill="currentColor"
-                        ></path></svg
-                      ><a href="tel:+79034043434">+7 903 404-34-34</a>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 482.6 482.6"
-                      >
-                        <path
-                          d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                          fill="currentColor"
-                        ></path></svg
-                      ><a href="tel:+79034301110">+7 903 430-11-10</a>
-                    </li>
-                  </ul>
-                  <div class="location-contacts__aside">
-                    <ul class="location-phones">
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 482.6 482.6"
-                        >
-                          <path
-                            d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                            fill="currentColor"
-                          ></path></svg
-                        ><a href="tel:+79604701165">+7 960 470-11-65</a>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 482.6 482.6"
-                        >
-                          <path
-                            d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                            fill="currentColor"
-                          ></path></svg
-                        ><a href="tel:+79034309990">+7 903 430-99-90</a>
-                      </li>
-                    </ul>
-                    <a href="mailto:Maxlid2026@yandex.ru" class="location-email"
-                      ><svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect x="2" y="4" width="20" height="16" rx="3"></rect>
-                        <polyline points="2,4 12,13 22,4"></polyline></svg
-                      >Maxlid2026@yandex.ru</a
-                    >
-                  </div>
-                </div>
-                <a href="tel:+79286193095" class="location-btn">Позвонить</a>
-              </div>
-            </article>
-
-            <article class="location-card">
-              <div class="location-media">
-                <img
-                  src="/assests/img/card2.png"
-                  alt="Кредитный отдел МаксАвто"
-                  loading="lazy"
-                />
-              </div>
-              <div class="location-info">
-                <h4>Кредитный отдел</h4>
-                <p class="location-lead">Кредит, лизинг и страхование</p>
-                <div class="location-contacts location-contacts--cols">
-                  <ul class="location-phones">
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 482.6 482.6"
-                      >
-                        <path
-                          d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                          fill="currentColor"
-                        ></path></svg
-                      ><a href="tel:+79034022270">+7 903 402-22-70</a>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 482.6 482.6"
-                      >
-                        <path
-                          d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                          fill="currentColor"
-                        ></path></svg
-                      ><a href="tel:+79604701164">+7 960 470-11-64</a>
-                    </li>
-                  </ul>
-                  <div class="location-contacts__aside">
-                    <div class="location-emails">
-                      <a href="mailto:kreditmaxavto@yandex.ru"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <rect
-                            x="2"
-                            y="4"
-                            width="20"
-                            height="16"
-                            rx="3"
-                          ></rect>
-                          <polyline points="2,4 12,13 22,4"></polyline></svg
-                        >kreditmaxavto@yandex.ru</a
-                      >
-                      <a href="mailto:creditniyotdeln@yandex.ru"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <rect
-                            x="2"
-                            y="4"
-                            width="20"
-                            height="16"
-                            rx="3"
-                          ></rect>
-                          <polyline points="2,4 12,13 22,4"></polyline></svg
-                        >creditniyotdeln@yandex.ru</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <a href="tel:+79034022270" class="location-btn">Позвонить</a>
-              </div>
-            </article>
-
-            <article class="location-card">
-              <div class="location-media">
-                <img
-                  src="/assests/img/card3.png"
-                  alt="Приём звонков МаксАвто"
-                  loading="lazy"
-                />
-              </div>
-              <div class="location-info">
-                <h4>Приём звонков</h4>
-                <p class="location-lead">Основной номер для обращений</p>
-                <ul class="location-phones location-phones--main">
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 482.6 482.6"
-                    >
-                      <path
-                        d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <div class="location-phones__stack">
-                      <span class="location-phones__label">Основной</span
-                      ><a href="tel:+79043430043">+7 904 343-00-43</a>
-                    </div>
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 482.6 482.6"
-                    >
-                      <path
-                        d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <div class="location-phones__stack">
-                      <span class="location-phones__label">Дополнительный</span
-                      ><a href="tel:+79896160060">+7 989 616-00-60</a>
-                    </div>
-                  </li>
-                </ul>
-                <a href="tel:+79043430043" class="location-btn">Позвонить</a>
-              </div>
-            </article>
           </div>
         </div>
       </section>
